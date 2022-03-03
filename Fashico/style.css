@@ -1,0 +1,426 @@
+*{
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Animasi */
+
+.hide{
+    /* transition-delay: 1s; */
+    opacity: 0;
+}
+
+/* End Animasi */
+.move-scroll-down{
+    position: absolute;
+    top: 1080px;
+    left: -27%;
+    transition-duration: 2s;
+}
+
+.move-scroll-up{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transition-duration: 2s;
+}
+
+.start-position{
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.show{
+    opacity: 100;
+    transition-delay: 0.85s;
+}
+/* End Animasi */
+
+#phone-scroll{
+    /*  */
+}
+
+#phone-hide{
+    /* opacity: 0; */
+    position: absolute;
+}
+
+#phone-list{
+    position: static;
+    min-width: 301px;
+    min-height: 601px;
+    /* margin-right: 40px; */
+}
+
+body{
+    /* width: 100vw; */
+    overflow-x: hidden;
+}
+
+.container{
+    /* max-width: 1280px; */
+}
+
+.button{
+    padding: 18px 34px;
+    border-radius: 29px;
+    transform: translateZ(1px);
+}
+
+.button img{
+    width: 20%;
+}
+
+.button-cyan{
+    background-color: #2DAAE1;
+    transform: rotate(4deg);
+    left: 0;
+}
+
+.button-pink{
+    background-color: #FB7BED;
+    transform: rotate(-4deg);
+    left: 0;
+}
+
+.button-transparant{
+    background-color: transparent;
+}
+
+.button-border-pink{
+    transform: rotate(-4deg);
+    left: 0;
+    border: 1px solid #FB7BED;
+}
+
+.button-border-cyan{
+    transform: rotate(4deg);
+    left: 0;
+    border: 1px solid #2DAAE1;
+}
+
+.bg-grey{
+    background-color: #f4f4f4;
+}
+
+.text-grey{
+    color: #757575 !important;
+}
+
+/* Header */
+.header{
+    /* width: 100vw; */
+    /* overflow: hidden; */
+    background-image: url(Asset/bg-header.png);
+    background-size: cover;
+}
+
+.background-header{
+    /* height: 100vh;
+    width: 98.9vw;
+    overflow: hidden;
+    transform: translateZ(-10px); */
+    
+}
+/* Head-Nav */
+.head-nav{
+    padding: 30px 0;
+    z-index: 999;
+}
+
+.nav-button{
+    margin: 0;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.logo img{
+    position: absolute;
+    opacity: 0;
+}
+
+.page{
+    position: static;
+    width: 520px;
+    opacity: 100;
+}
+
+.page a{
+    text-decoration: none;
+    color: #757575;
+    font-size: 18px;
+}
+
+.page .nav-button{
+    display: none;
+}
+
+/* End Head-Nav */
+/* Head-Banner */
+.text-banner{
+    width: 50%;
+}
+
+.image-banner{
+    width: 50%;
+    height: 601px;
+    /* height: fit-content; */
+}
+
+.head-banner .container{
+    transform: translateZ(1px);
+}
+
+
+.head-banner{
+    padding: 50px 0;
+    position: relative;
+    z-index: 998;
+}
+
+.banner-title{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.banner-subtitle{
+    font-size: 24px;
+    margin: 40px 0;
+    color: #757575;
+}
+
+.banner-button{
+    width: 70%;
+}
+
+button img{
+    margin-right: 15px;
+}
+
+.stiker-smile{
+    left: 50px;
+    top: 100px;
+}
+
+.stiker-star{
+    left: 60px;
+    bottom: 100px;
+}
+
+.stiker-shop{
+    right: 100px;
+    top: 200px;
+}
+/* End Head-Banner */
+/* Head-Logo */
+.head-logo{
+    margin: 50px 0;
+    transform: translateZ(1px);
+    overflow: auto;
+}
+/* End Head-Logo */
+/* End Header */
+
+/* Main */
+/* .header{
+    transform: translateZ(10px);
+}
+.main{
+    transform: translateZ(1px);
+} */
+/* Main-Style */
+.main-style{
+    padding: 50px 0;
+}
+
+.main-subtitle{
+    color: #757575;
+    font-size: 24px;
+}
+
+.main-title{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.style-image{
+    position: relative;
+    padding: 50px 0;
+    overflow: auto;
+}
+/* End Main-Style */
+/* Main-Hype */
+.hype-contents{
+    padding: 80px 0;
+}
+
+.hype-title{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.hype-subtitle{
+    color: #757575;
+    font-size: 18px;
+}
+/* End Main-Hype */
+/* Main-Shop */
+.shop-contents{
+    padding: 80px 0;
+    width: 92%;
+}
+
+.kolom{
+    height: 500px;
+}
+
+.shop-content{
+    width: 566px;
+    padding: 40px 40px ;
+    overflow: hidden;
+}
+
+.long{
+    height: 500px;
+    background-image: linear-gradient(to top right, #2DAAE1, #FB7BED);
+}
+
+.half{
+    height: 236px;
+    position: relative;
+}
+
+.shop-title{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.shop-subtitle{
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.shop-content div{
+    width: 470px;
+    height: 388px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255, 0.8), rgba(255,255,255, 0.6));
+    border-radius: 32px;
+    position: relative;
+    top: 50px;
+}
+
+.sell-1{
+    bottom: 0;
+    right: 0;
+}
+
+.sell-2{
+    bottom: 0;
+    right: 80px;
+}
+
+.sell-3{
+    bottom: 0;
+    right: 5px;
+}
+
+.buy-1{
+    bottom: 0;
+    right: 50px;
+}
+/* End Main-Shop */
+/* Main-Vibe */
+.main-vibe{
+    padding: 100px 0 100px;
+    background-color: #f4f4f4;
+}
+
+.gallery{
+    margin: 50px 0;
+    overflow: auto;
+}
+
+.gallery-kolom{
+    height: 1050px;
+}
+
+.image-hover:hover .image-view{
+        filter: brightness(50%);
+        transition: ease-out;
+        transition-duration: 0.5s;
+}
+
+.image-icon{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    opacity: 0;
+
+}
+
+.image-hover:hover .image-icon{
+    opacity: 100;
+    transition: ease-out;
+    transition-duration: 0.5s;
+}
+/* End Main-Vibes */
+/* Main-Community */
+.main-community{
+    padding: 50px 0;
+    height: 480px;
+    background-color: black;
+    background-image: url(Asset/bg-community.png);
+    margin-bottom: 50px;
+}
+/* End Main-Community */
+.footer{
+    padding-bottom : 50px;
+}
+
+.row{
+    width: 100%;
+    /* height: auto; */
+}
+
+.col{
+    /* height: 20px; */
+}
+
+.col-12{
+    margin: 20px 0;
+}
+
+.footer .container{
+    padding: 50px 0;
+    border-bottom: 1px solid #757575;
+}
+
+.footer .container .row .col-lg-2{
+    padding: 20px 0;
+}
+
+.footer-title{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.footer-logo{
+    margin-top: 50px;
+    width: 30%;
+}
+/* End Footer */
