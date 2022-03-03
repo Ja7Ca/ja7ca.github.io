@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="css/bootstrap.css" rel="stylesheet" >
+    <title>Joboard.</title>
+</head>
+<body>
+    <section class="head">
+        <div class="navbar">
+            <div class="container py-3 d-flex justify-content-between">
+                <img src="asset/Left align.png" id="toogle-button" onclick="showNavigator()" class="">
+                <h1 class="nav-logo"><span>Jo</span>board.</h1>
+                <div id="page" class="page d-flex flex-column flex-lg-row justify-content-between">
+                    <a href="#">Explore</a>
+                    <a href="#">Hire Freelancer</a>
+                    <a href="#">Request Work</a>
+                    <a href="#">Upload Job</a>
+                    <div class="nav-button d-flex d-lg-none justify-content-between">
+                        <button class="btn px-4 py-2">Login</button>
+                        <button class="btn border border-1 border-dark text-white bg-dark dark-hover px-4 py-2">Register</button>
+                    </div>
+                </div>
+                <div class="nav-button d-lg-flex d-none justify-content-between">
+                    <button class="btn px-4 py-2">Login</button>
+                    <button class="btn border border-1 border-dark text-white bg-dark dark-hover px-4 py-2">Register</button>
+                </div>
+            </div>
+        </div>
+        <div class="banner position-relative">
+            <div class="container d-flex flex-column flex-lg-row justify-content-between">
+                <div class="text-banner d-flex flex-column justify-content-around py-5">
+                    <h1 class="banner-title text-lg-start text-center" data-aos="fade-up" data-aos-duration="1000">Find or be professional freelancer with passion</h1>
+                    <p class="banner-subtitle text-lg-start text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Worldwide freelancer job seeker platfrom. We connect freelancer and startup with the easy way and goo collaboration</p>
+                    <div class="banner-tag text-center text-lg-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <button class="btn bg-light">nft art</button>
+                        <button class="btn bg-light">ui designer</button>
+                        <button class="btn bg-light">ux designer</button>
+                        <button class="btn bg-light">product designer</button>
+                        <button class="btn bg-light">3d ilustrator</button>
+                        <button class="btn bg-light">grapich designer</button>
+                        <button class="btn bg-light">marketing</button>
+                        <button class="btn bg-light">front-end</button>
+                    </div>
+                    <form class="position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <input type="text" placeholder='Search "Webflow Dev"' class="px-5">
+                        <img src="asset/search-icon.png" class="search-icon position-absolute">
+                        <button class="search-btn btn bg-black dark-hover text-white px-5 position-absolute">Search</button>
+                    </form>
+                </div>
+                <div class="image-banner d-flex justify-content-center position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <img src="asset/image-banner.png" class="profile-banner">
+                    <img src="asset/smile-icon.png" class="smile-icon position-absolute">
+                </div>
+            </div>
+            <div class="banner-border position-relative">
+                <img src="asset/full-money-border.png" class="money-1 position-relative">
+            </div>
+        </div>
+    </section>
+    <section class="limit">
+        <div class="text-marquee d-flex align-items-center">
+            <!-- <marquee behavior="" direction="left">Product Manager <img src="asset/diamond-icon.png" alt=""> Programmer <img src="asset/diamond-icon.png" alt=""> Marketing <img src="asset/diamond-icon.png" alt=""> Developer <img src="asset/diamond-icon.png" alt=""> Ilustrator</marquee> -->
+            <div class="highway-barrier">
+                <ul class="highway-lane">
+                    <li class="highway-item">Programmer <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Marketing <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Developer <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Ilustrator <img src="asset/diamond-icon.png" alt=""></li>
+                    
+                    <li class="highway-item">Programmer <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Marketing <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Developer <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Ilustrator <img src="asset/diamond-icon.png" alt=""></li>
+
+                    <li class="highway-item">Programmer <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Marketing <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Developer <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Ilustrator <img src="asset/diamond-icon.png" alt=""></li>
+
+                    <li class="highway-item">Programmer <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Marketing <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Developer <img src="asset/diamond-icon.png" alt=""></li>
+                    <li class="highway-item">Ilustrator <img src="asset/diamond-icon.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="main-job">
+            <div class="container text-center">
+                <p class="main-subtitle" data-aos="fade-up" data-aos-duration="1000">+100 jobs uploaded per day</p>
+                <h1 class="main-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">New Jobs for Apply</h1>
+                <div class="job-contents d-flex justify-content-between justify-content-lg-around">
+                    <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="job-icon d-flex justify-content-between">
+                            <img src="asset/job-item-1.png" class="job-logo">
+                            <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
+                            <!-- <i class="fa-thin fa-bookmark text-black p-3"></i> -->
+                        </div>
+                        <p class="job-name">Balkan Brother</p>
+                        <p class="job-title">UI & UX Designer</p>
+                        <p class="job-subtitle">Open Internship for junior uuuuuuuuuuu</p>
+                        <div class="job-detail">
+                            <button class="btn-time btn px-2 py-1">Full Time</button>
+                            <button class="btn-desc btn px-2 py-1">Fresh Graduate</button>
+                        </div>
+                    </div>
+                    <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="job-icon d-flex justify-content-between">
+                            <img src="asset/job-item-2.png" class="job-logo">
+                            <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
+                        </div>
+                        <p class="job-name">Oww Studio</p>
+                        <p class="job-title">Project Manager</p>
+                        <p class="job-subtitle">We're hiring PM to join our uuuuuuu</p>
+                        <div class="job-detail">
+                            <button class="btn-time btn px-2 py-1">Full Time</button>
+                            <button class="btn-desc btn px-2 py-1">Senior Level</button>
+                        </div>
+                    </div>
+                    <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="job-icon d-flex justify-content-between">
+                            <img src="asset/job-item-3.png" class="job-logo">
+                            <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
+                        </div>
+                        <p class="job-name">Udemy</p>
+                        <p class="job-title">3D Ilustrator</p>
+                        <p class="job-subtitle">We need 3D Ilustrator to join uuuuuu</p>
+                        <div class="job-detail">
+                            <button class="btn-time btn px-2 py-1">Remote</button>
+                            <button class="btn-desc btn px-2 py-1">Senior level</button>
+                        </div>
+                    </div>
+                    <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <div class="job-icon d-flex justify-content-between">
+                            <img src="asset/job-item-4.png" class="job-logo">
+                            <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
+                        </div>
+                        <p class="job-name">Status</p>
+                        <p class="job-title">Software Enginer</p>
+                        <p class="job-subtitle">We're hiring Software Enginer to join our uuuuuuu</p>
+                        <div class="job-detail">
+                            <button class="btn-time btn px-2 py-1">Part Time</button>
+                            <button class="btn-desc btn px-2 py-1">Senior Level</button>
+                        </div>
+                    </div>
+                    <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="job-icon d-flex justify-content-between">
+                            <img src="asset/job-item-5.png" class="job-logo">
+                            <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
+                            <!-- <i class="fa-thin fa-bookmark text-black p-3"></i> -->
+                        </div>
+                        <p class="job-name">Tubix Studio</p>
+                        <p class="job-title">UX Designer</p>
+                        <p class="job-subtitle">UI & UX Designer</p>
+                        <div class="job-detail">
+                            <button class="btn-time btn px-2 py-1">Full Time</button>
+                            <button class="btn-desc btn px-2 py-1">Senior Leve</button>
+                        </div>
+                    </div>
+                    <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                        <div class="job-icon d-flex justify-content-between">
+                            <img src="asset/job-item-6.png" class="job-logo">
+                            <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
+                        </div>
+                        <p class="job-name">Sobat Studio</p>
+                        <p class="job-title">Project Manager</p>
+                        <p class="job-subtitle">We're hiring Project Manager to join our uuuuuuu</p>
+                        <div class="job-detail">
+                            <button class="btn-time btn px-2 py-1">Remote</button>
+                            <button class="btn-desc btn px-2 py-1">Junior</button>
+                        </div>
+                    </div>
+                    <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                        <div class="job-icon d-flex justify-content-between">
+                            <img src="asset/job-item-7.png" class="job-logo">
+                            <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
+                        </div>
+                        <p class="job-name">Dipa Inhouse</p>
+                        <p class="job-title">Frontend Dev</p>
+                        <p class="job-subtitle">We need a Frontend Developer</p>
+                        <div class="job-detail">
+                            <button class="btn-time btn px-2 py-1">Full Time</button>
+                            <button class="btn-desc btn px-2 py-1">Senior Level</button>
+                        </div>
+                    </div>
+                    <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                        <div class="job-icon d-flex justify-content-between">
+                            <img src="asset/job-item-8.png" class="job-logo">
+                            <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
+                        </div>
+                        <p class="job-name">Icon8 Studio</p>
+                        <p class="job-title">UI Designer</p>
+                        <p class="job-subtitle">Need a UI Design work to join uuuuu</p>
+                        <div class="job-detail">
+                            <button class="btn-time btn px-2 py-1">Full Time</button>
+                            <button class="btn-desc btn px-2 py-1">Senior Level</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-freelancer">
+            <div class="container">
+                <p class="main-subtitle text-center" data-aos="fade-up" data-aos-duration="1000">+1000 join in Joboard</p>
+                <h1 class="main-title text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Feature Freelancer</h1>
+                <div class="freelancer-contents d-flex justify-content-between">
+                    <div class="freelancer-item yellow d-flex flex-column flex-sm-row justify-content-between position-relative" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="profile-freelancer order-2 order-sm-1">
+                            <img src="asset/freelancer-1.png" alt="">
+                        </div>
+                        <div class="text-freelancer py-3 d-flex flex-column justify-content-between  order-1 order-sm-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                            <h3 class="freelancer-caption text-center text-sm-start">Help you build an good product with a research</h3>
+                            <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
+                            <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
+                        </div>
+                        <img src="asset/petik.png" class="petik position-absolute">
+                    </div>
+                    <div class="freelancer-item pink d-flex flex-column flex-sm-row justify-content-between position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="profile-freelancer order-2 order-sm-1">
+                            <img src="asset/freelancer-2.png" alt="">
+                        </div>
+                        <div class="text-freelancer py-3 d-flex flex-column justify-content-between  order-1 order-sm-2">
+                            <h3 class="freelancer-caption text-center text-sm-start">Passionate about creating beautiful & useful things</h3>
+                            <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
+                            <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
+                        </div>
+                        <img src="asset/petik.png" class="petik position-absolute">
+                    </div>
+                    <div class="freelancer-item orange d-flex flex-column flex-sm-row justify-content-between position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="profile-freelancer order-2 order-sm-1">
+                            <img src="asset/freelancer-3.png" alt="">
+                        </div>
+                        <div class="text-freelancer py-3 d-flex flex-column justify-content-between  order-1 order-sm-2">
+                            <h3 class="freelancer-caption text-center text-sm-start">Love to combine simplicity with usability in design</h3>
+                            <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
+                            <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
+                        </div>
+                        <img src="asset/petik.png" class="petik position-absolute">
+                    </div>
+                    <div class="freelancer-item blue d-flex flex-column flex-sm-row justify-content-between position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <div class="profile-freelancer order-2 order-sm-1">
+                            <img src="asset/freelancer-4.png" alt="">
+                        </div>
+                        <div class="text-freelancer py-3 d-flex flex-column justify-content-between order-1 order-sm-2">
+                            <h3 class="freelancer-caption text-center text-sm-start">Design & Code Avaliable for New Project</h3>
+                            <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
+                            <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
+                        </div>
+                        <img src="asset/petik.png" class="petik position-absolute">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-solution">
+            <div class="container d-flex flex-column flex-lg-row align-items-center">
+                <div class="text-solution d-flex flex-column justify-content-around py-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <h1 class="solution-title text-lg-start text-center">
+                        Solution for finding best startup talents
+                    </h1>
+                    <p class="solution-subtitle text-lg-start text-center">
+                        More than 1000 Startup find their pro talent here. We connect all freelancer arround the world
+                    </p>
+                    <ul class="list-solution d-lg-block d-flex flex-column align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <li class="d-flex"><div class="circle-check position-relative d-flex justify-content-center">
+                            <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512">
+                                <path class="path" fill="black" stroke="white" stroke-width="20" d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"/>
+                            </svg>
+                            <svg class="check-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 413 522">
+                                <path class="path" fill="black" stroke="white" stroke-width="80" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/>
+                            </svg>
+                        </div> More than 100 Categories Skill</li>
+                        <li class="d-flex"><div class="circle-check position-relative d-flex justify-content-center">
+                            <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512">
+                                <path class="path" fill="black" stroke="white" stroke-width="20" d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"/>
+                            </svg>
+                            <svg class="check-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 413 522">
+                                <path class="path" fill="black" stroke="white" stroke-width="80" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/>
+                            </svg>
+                        </div> Installed more than 100K User</li>
+                        <li class="d-flex"><div class="circle-check position-relative d-flex justify-content-center">
+                            <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512">
+                                <path class="path" fill="black" stroke="white" stroke-width="20" d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"/>
+                            </svg>
+                            <svg class="check-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 413 522">
+                                <path class="path" fill="black" stroke="white" stroke-width="80" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/>
+                            </svg>
+                        </div> Connect people arround the world</li>
+                        <li class="d-flex"><div class="circle-check position-relative d-flex justify-content-center">
+                            <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512">
+                                <path class="path" fill="black" stroke="white" stroke-width="20" d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"/>
+                            </svg>
+                            <svg class="check-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 413 522">
+                                <path class="path" fill="black" stroke="white" stroke-width="80" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/>
+                            </svg>
+                        </div> More than 100 Categories Skill</li>
+                    </ul>
+                </div>
+                <div class="image-solution" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="asset/solution.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main-feedback">
+            <div class="container d-flex flex-column align-items-center py-5">
+                <h1 class="main-title text-center" data-aos="fade-up" data-aos-duration="1000">
+                    We are work with largest company around the world
+                </h1>
+                <div class="feedback-contents d-flex flex-row flex-column flex-lg-row justify-content-between">
+                    <div class="feedback-item p-5 p-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="star">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                        </div>
+                        <div class="feedback">
+                            <p>"We decided to go online to update and extend our tikecting options. TryBooking made this transition smooth, simple and user frinedly. The pre-festival and backup services was sensational"</p>
+                        </div>
+                        <div class="feedback-profile d-flex justify-content-start align-items-lg-center">
+                            <div class="feedback-profile-image">
+                                <img src="asset/feedback-1.png" alt="">
+                            </div>
+                            <div class="feedback-profile-detail">
+                                <p class="details-name">Rodrigo Dimateo</p>
+                                <p class="details-job">HRD Amazonlily</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-item p-5 p-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="star">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                        </div>
+                        <div class="feedback">
+                            <p>"We decided to go online to update and extend our tikecting options. TryBooking made this transition smooth, simple and user frinedly. The pre-festival and backup services was sensational"</p>
+                        </div>
+                        <div class="feedback-profile d-flex justify-content-start justify-content-start align-items-lg-center">
+                            <div class="feedback-profile-image">
+                                <img src="asset/feedback-2.png" alt="">
+                            </div>
+                            <div class="feedback-profile-detail">
+                                <p class="details-name">Jessie Cabello</p>
+                                <p class="details-job">PM Gojekan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-item p-5 p-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="star">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                            <img src="asset/star-icon.png" alt="">
+                        </div>
+                        <div class="feedback">
+                            <p>"We decided to go online to update and extend our tikecting options. TryBooking made this transition smooth, simple and user frinedly. The pre-festival and backup services was sensational"</p>
+                        </div>
+                        <div class="feedback-profile d-flex justify-content-start justify-content-start align-items-lg-center">
+                            <div class="feedback-profile-image">
+                                <img src="asset/feedback-3.png" alt="">
+                            </div>
+                            <div class="feedback-profile-detail">
+                                <p class="details-name">Jamesh Davidson</p>
+                                <p class="details-job">CEO RuangGurih</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-connect">
+            <div class="container d-flex flex-lg-row flex-column flex-xl-row justify-content-between align-items-center">
+                <div class="text-connect d-flex flex-column justify-content-around align-items-start align-items-lg-start align-items-center ps-lg-5 ps-2 ps-lg-5 py-5">
+                    <h1 class="connect-title text-lg-start text-center text-xl-start" data-aos="fade-up" data-aos-duration="1000">
+                        Connect with freelancer now more easier with us.
+                    </h1>
+                    <button class="btn bg-black dark-hover text-white px-5 py-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Create a Project</button>
+                </div>
+                <div class="image-connect position-relative d-flex justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="asset/image-connect.png" class="image-connect position-relative">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="foot">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12 col-md-12 d-flex flex-column justify-content-around align-items-xl-start ps-0 ps-xl-5 order-xl-1 order-lg-5 order-5 justify-content-lg-between align-items-lg-center justify-content-md-between align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <h1 class="footer-logo"><span>Jo</span>board.</h1>
+                        <div class="footer-sosmed d-flex justify-content-between">
+                            <img src="asset/instagram-icon.png" alt="">
+                            <img src="asset/telegram-icon.png" alt="">
+                            <img src="asset/linkedin-icon.png" alt="">
+                            <img src="asset/twitter-icon.png" alt="">
+                        </div>
+                        <p class="footer-copyright">
+                            &copy; Help Center
+                        </p>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-sm-4 col-12 footer-list text-xl-start text-lg-center text-center order-2">
+                        <p class="list-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Categories</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">Grapich & Design</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Digital Marketing</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Writing & Translation</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Video & Animation</a></p>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-sm-4 col-12 footer-list text-xl-start text-lg-center text-center order-3">
+                        <p class="list-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">Community</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Grapich & Design</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Digital Marketing</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Writing & Translation</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Video & Animation</a></p>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-sm-4 col-12 footer-list text-xl-start text-lg-center text-center order-4">
+                        <p class="list-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Company</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Grapich & Design</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Digital Marketing</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Writing & Translation</a></p>
+                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"><a href="#">Video & Animation</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var nav = document.getElementById("page");
+
+        function showNavigator(){
+            if(nav.style.opacity == 0){
+                nav.style.opacity = 100;
+                nav.style.transitionDuration = "0.5s";
+                // nav.translateZ = "2px";
+            } else {
+                nav.style.opacity = 00;
+                nav.style.transitionDuration = "0.5s";
+                // nav.translateZ = "-2px";
+            }
+        }
+
+        window.onscroll = function() {myFunction()};
+
+        function myFunction(){
+            if(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){
+                nav.style.opacity = 0;
+            }
+        }
+
+        window.onresize = function(){
+            nav.style.opacity = 0;
+        }
+
+        $("#toogle-button").on('click', function(){
+            
+        })
+
+        $(".job-item").mouseenter(function(){
+            $(this).find(".bookmark-icon").attr('src', './asset/bookmark-white-icon.png');
+        }).mouseleave(function(){
+            $(this).find(".bookmark-icon").attr('src', './asset/bookmark-black-icon.png');
+        })
+
+        $('.list-solution').on('scroll', function(){
+            console.log("A");
+            $(this).find('.path').css(
+                {"animationName": "dash"},
+                {"animationDuration": "5s"},
+                {"animationFillMode": "forwards"}
+                )
+        })
+
+        $(document).ready(function(){
+            let offset = "";
+            $(window).on("scroll", function(){
+                offset = $(window).scrollTop() + $(window).height();
+                let posisi = $(".main-solution").offset().top;
+                if(posisi < offset){
+                    $('.path').css(
+                        {"animationName": "dash",
+                        "animationDuration": "5s",
+                        "animationFillMode": "forwards"}
+                    )
+                }
+            })
+        })
+        
+    </script>
+</body>
+</html>

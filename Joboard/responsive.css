@@ -1,0 +1,427 @@
+@media (min-width: 1400px) {
+    .page{
+        opacity: 100 !important;
+    }
+    .page .nav-button{
+        display: none;
+    }
+    #toogle-button{
+        display: none;
+    }   
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    #toogle-button{
+        display: none;
+    }
+    .page .nav-button{
+        display: none;
+    }  
+
+    .page{
+        width: 50%;
+        opacity: 100 !important;
+    }
+
+    .nav-button{
+        width: 20%;
+    }
+    
+    .image-solution img{
+        width: 100%;
+    }
+    .smile-icon{
+        left: 0;
+    }
+}
+
+@media (min-width: 992.0px) and (max-width: 1200px) {
+    #toogle-button{
+        display: none;
+    }
+
+    .page .nav-button{
+        display: none;
+    }
+
+    .page{
+        position: static !important;
+        width: 50% !important;
+        opacity: 100 !important;
+    }
+
+    .nav-button{
+        width: 20%;
+    }
+
+    .profile-banner{
+        height: 90%;
+    }
+
+    .smile-icon{
+        left: -10%;
+    }
+
+    .image-solution img{
+        width: 100%;
+    }
+
+    .banner-title, .banner-subtitle, .banner-tag{
+        width: 100%;
+    }
+
+    .banner form{
+        width: 95%;
+    }
+
+    .banner-border{
+        width: 100%;
+    }
+
+    .job-item{
+        width: 30%;
+    }
+
+    /* .profile-image, .text-freelancer{
+        width: 100%;
+        height: 50%;
+    } */
+
+    .freelancer-item{
+        width: 100%;
+    }
+
+    .profile-freelancer img{
+        left: 10%;
+    }
+
+    .image-connect{
+        width: 60%;
+    }
+
+    .footer-logo, .footer-sosmed, .footer-copyright{
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+    #toogle-button{
+        display: static !important;
+    }
+
+    .navbar{
+        position: relative;
+    }
+
+    .nav-button{
+        display: none !important;
+    }
+
+    .page{
+        padding-left: 40px;
+        position: absolute;
+        top:  105%;
+        left: -1%;
+        z-index: 10;
+        width: 110% !important;
+        background-color: #FF8A57;
+        box-shadow: 5px 5px 10px 0px;
+        opacity: 0;
+    }
+
+    .page a{
+        margin: 10px 20px 10px 0;
+        border-bottom: 1px solid black;
+        width: fit-content;
+    }
+
+    .page .nav-button{
+        padding: 10px 0;
+        margin-bottom: 10px;
+        /* margin: 10px 0; */
+        border-bottom: 1px solid black;
+        width: fit-content;
+    }
+
+    .nav-logo{
+        width: 20%;
+    }
+
+    .page{
+        width: 60%;
+    }
+
+    .nav-button{
+        width: fit-content;
+    }
+
+    .text-banner, .image-banner{
+        width: 100%;
+    }
+
+    .banner-title, .banner-subtitle, .banner-tag{
+        width: 100%;
+    }
+
+    .job-item{
+        width: 48%;
+    }
+
+    .freelancer-item{
+        width: 100%;
+    }
+
+    .profile-freelancer img{
+        left: 5%;
+    }
+
+    .text-solution{
+        width: 100%;
+    }
+
+    .image-solution{
+        width: 100%;
+    }
+
+    .solution-title, .solution-subtitle{
+        width: 100%;
+    }
+
+    .list-solution li{
+        width: 350px;
+    }
+
+    .feedback-item{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .text-connect{
+        width: 100%;
+    }
+
+    .image-connect{
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.9px) {
+    .navbar{
+        position: relative;
+    }
+
+    .page{
+        padding-left: 40px;
+        position: absolute;
+        top:  105%;
+        left: -1%;
+        z-index: 10;
+        width: 110% !important;
+        background-color: #FF8A57;
+        box-shadow: 5px 5px 10px 0px;
+        opacity: 0;
+    }
+
+    .page a{
+        margin: 10px 20px 10px 0;
+        border-bottom: 1px solid black;
+        width: fit-content;
+    }
+
+    .page .nav-button{
+        padding: 10px 0;
+        margin-bottom: 10px;
+        /* margin: 10px 0; */
+        border-bottom: 1px solid black;
+        width: fit-content;
+    }
+
+    .main-feedback .main-title{
+        width: 100%;
+    }
+
+    .text-banner, .image-banner, .banner-title, .banner-subtitle, .banner-tag{
+        width: 100%;
+    }
+
+    .job-item{
+        width: 100%;
+    }
+
+    .freelancer-item{
+        width: 100%;
+    }
+
+    .profile-freelancer{
+        width: 60%;
+    }
+
+    .text-freelancer{
+        width: 40%;
+        padding-right: 10px;
+    }
+
+    .text-solution, .image-solution{
+        width: 100%;
+    }
+
+    .image-solution img{
+        width: 100%;
+    }
+
+    .solution-title, .solution-subtitle{
+        width: 100%;
+    }
+
+    .list-solution li{
+        width: 350px;
+    }
+
+    .feedback-item{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .text-connect{
+        width: 100%;
+    }
+
+    .image-connect{
+        width: 70%;
+    }
+}
+
+@media (max-width: 575.9px) {
+    .navbar{
+        position: relative;
+    }
+
+    .page{
+        padding-left: 40px;
+        position: absolute;
+        top:  105%;
+        left: -1%;
+        z-index: 10;
+        width: 110% !important;
+        background-color: #FF8A57;
+        box-shadow: 5px 5px 10px 0px;
+        opacity: 0;
+    }
+
+    .page a{
+        margin: 10px 20px 10px 0;
+        border-bottom: 1px solid black;
+        width: fit-content;
+    }
+
+    .page .nav-button{
+        padding: 10px 0;
+        margin-bottom: 10px;
+        /* margin: 10px 0; */
+        border-bottom: 1px solid black;
+        width: fit-content;
+    }
+
+    .text-banner, .image-banner, .banner-title, .banner-subtitle, .banner-tag{
+        width: 100%;
+    }
+
+    .banner-title{
+        font-size: 32px;
+    }
+
+    .main-title{
+        font-size: 32px;
+    }
+
+    .solution-title{
+        font-size: 32px;
+    }
+
+    .connect-title{
+        font-size: 32px;
+    }
+
+    .image-banner .profile-banner{
+        width: 90%;
+    }
+
+    .smile-icon{
+        left: -2%;
+        /* width: ; */
+    }
+
+    .job-item{
+        width: 100%;
+    }
+
+    .freelancer-item{
+        width: 100%;
+    }
+
+    .profile-freelancer{
+        width: 60%;
+    }
+
+    .text-freelancer{
+        width: 40%;
+        padding-right: 10px;
+    }
+
+    .text-solution, .image-solution{
+        width: 100%;
+    }
+
+    .image-solution img{
+        width: 100%;
+    }
+
+    .solution-title, .solution-subtitle{
+        width: 100%;
+    }
+
+    .list-solution li{
+        width: 350px;
+    }
+
+    .main-feedback .main-title{
+        width: 100%;
+    }
+
+    .feedback-item{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .text-connect{
+        width: 100%;
+    }
+
+    .image-connect{
+        width: 70%;
+    }
+    .row{
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .text-freelancer{
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .profile-freelancer{
+        height: 200px;
+        left: 32%;
+    }
+
+    .profile-freelancer img{
+        left: 25%;
+        width: 50%;
+    }
+
+    .freelancer-caption{
+        margin: 20px 0;
+    }
+}
