@@ -16,9 +16,53 @@ button:active{
     transform: scale(0.95);
 }
 
-.dark-hover:hover{
-    /* background-color: #343333 !important; */
+a{
+    text-decoration: none;
 }
+
+#active-black:active{
+    background-color: black;
+    color: white;
+}
+
+.hamburger{
+    width: fit-content;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}  
+
+.hamburger .line{
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+#toogle-button.is-active .line:nth-child(2){
+    opacity: 0;
+}
+  
+#toogle-button.is-active .line:nth-child(1){
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+}
+  
+#toogle-button.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+/* .dark-hover:hover{
+    background-color: #343333 !important;
+} */
 
 button:hover{
     filter: brightness(120%);
@@ -121,6 +165,10 @@ button:hover{
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
+}
+
+.page a:hover{
+    color: #757575;
 }
 
 .nav-button{
@@ -301,6 +349,7 @@ form input{
     white-space: nowrap;
     font-size: 18px;
     margin-bottom: 0;
+    color: black;
 }
 
 .job-detail{
@@ -318,6 +367,7 @@ form input{
 }
 
 .job-item:hover{
+    /* transform: scale(1.02); */
     background-color: #FF9CB6;
     box-shadow: 10px 10px;
     transition-duration: 0.5s;
@@ -345,16 +395,22 @@ form input{
     margin: 50px 0;
 }
 
-.freelancer-item{
+.wrap-freelancer{
     width: 49%;
+}
+
+.freelancer-item{
+    width: 100%;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 10px 10px;
     margin-bottom: 20px;
+    transition-duration: 0.5s;
     /* overflow: hidden; */
 }
 
 .freelancer-item:hover{
+    /* background-color: aqua; */
     transform: scale(1.02);
     transition-duration: 0.5s;
 }
@@ -499,17 +555,21 @@ li div{
     width: 100%;
 }
 
-.feedback-item{
+.wrap-feedback{
     width: 31%;
+}
+
+.feedback-item{
+    width: 100%;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 10px 10px;
     margin: 50px 0;
+    transition-duration: 0.5s;
 }
 
 .feedback-item:hover{
     transform: scale(1.02);
-    transition-duration: 0.5s;
 }
 
 .feedback{
@@ -608,4 +668,8 @@ li div{
 .list-item{
     font-weight: 300;
     margin: 10px 0;
+}
+
+.list-item a:hover{
+    color: #ecf0f1 !important;
 }

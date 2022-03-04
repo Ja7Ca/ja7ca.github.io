@@ -9,14 +9,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link href="../css/bootstrap.css" rel="stylesheet" >
+    <!-- <link href="../css/bootstrap.css" rel="stylesheet" > -->
     <title>Joboard.</title>
 </head>
 <body>
     <section class="head">
         <div class="navbar">
             <div class="container py-3 d-flex justify-content-between">
-                <img src="asset/Left align.png" id="toogle-button" onclick="showNavigator()" class="">
+                <!-- <img src="asset/Left align.png" id="toogle-button" onclick="showNavigator()" class=""> -->
+                <div class="hamburger" id="toogle-button">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
                 <h1 class="nav-logo"><span>Jo</span>board.</h1>
                 <div id="page" class="page d-flex flex-column flex-lg-row justify-content-between">
                     <a href="#">Explore</a>
@@ -24,13 +29,13 @@
                     <a href="#">Request Work</a>
                     <a href="#">Upload Job</a>
                     <div class="nav-button d-flex d-lg-none justify-content-between">
-                        <button class="btn px-4 py-2">Login</button>
-                        <button class="btn border border-1 border-dark text-white bg-dark dark-hover px-4 py-2">Register</button>
+                        <a href="#"><button id="hover-black" class="btn border border-1 border-dark px-4 py-2">Login</button></a>
+                        <a href="#"><button class="btn border border-1 border-dark text-white bg-dark dark-hover px-4 py-2">Register</button></a>
                     </div>
                 </div>
                 <div class="nav-button d-lg-flex d-none justify-content-between">
-                    <button class="btn px-4 py-2">Login</button>
-                    <button class="btn border border-1 border-dark text-white bg-dark dark-hover px-4 py-2">Register</button>
+                    <a href="#"><button id="active-black" class="btn border border-1 border-dark px-4 py-2">Login</button></a>
+                    <a href="#"><button class="btn border border-1 border-dark text-white bg-dark dark-hover px-4 py-2">Register</button></a>
                 </div>
             </div>
         </div>
@@ -40,14 +45,14 @@
                     <h1 class="banner-title text-lg-start text-center" data-aos="fade-up" data-aos-duration="1000">Find or be professional freelancer with passion</h1>
                     <p class="banner-subtitle text-lg-start text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Worldwide freelancer job seeker platfrom. We connect freelancer and startup with the easy way and goo collaboration</p>
                     <div class="banner-tag text-center text-lg-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                        <button class="btn bg-light">nft art</button>
-                        <button class="btn bg-light">ui designer</button>
-                        <button class="btn bg-light">ux designer</button>
-                        <button class="btn bg-light">product designer</button>
-                        <button class="btn bg-light">3d ilustrator</button>
-                        <button class="btn bg-light">grapich designer</button>
-                        <button class="btn bg-light">marketing</button>
-                        <button class="btn bg-light">front-end</button>
+                        <a href="#"><button class="btn bg-light">nft art</button></a>
+                        <a href="#"><button class="btn bg-light">ui designer</button></a>
+                        <a href="#"><button class="btn bg-light">ux designer</button></a>
+                        <a href="#"><button class="btn bg-light">product designer</button></a>
+                        <a href="#"><button class="btn bg-light">3d ilustrator</button></a>
+                        <a href="#"><button class="btn bg-light">grapich designer</button></a>
+                        <a href="#"><button class="btn bg-light">marketing</button></a>
+                        <a href="#"><button class="btn bg-light">front-end</button></a>
                     </div>
                     <form class="position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         <input type="text" placeholder='Search "Webflow Dev"' class="px-5">
@@ -100,6 +105,7 @@
                 <h1 class="main-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">New Jobs for Apply</h1>
                 <div class="job-contents d-flex justify-content-between justify-content-lg-around">
                     <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <a href="#">
                         <div class="job-icon d-flex justify-content-between">
                             <img src="asset/job-item-1.png" class="job-logo">
                             <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
@@ -112,8 +118,10 @@
                             <button class="btn-time btn px-2 py-1">Full Time</button>
                             <button class="btn-desc btn px-2 py-1">Fresh Graduate</button>
                         </div>
+                    </a>
                     </div>
                     <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <a href="#">
                         <div class="job-icon d-flex justify-content-between">
                             <img src="asset/job-item-2.png" class="job-logo">
                             <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
@@ -125,8 +133,10 @@
                             <button class="btn-time btn px-2 py-1">Full Time</button>
                             <button class="btn-desc btn px-2 py-1">Senior Level</button>
                         </div>
+                        </a>
                     </div>
                     <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <a href="#">
                         <div class="job-icon d-flex justify-content-between">
                             <img src="asset/job-item-3.png" class="job-logo">
                             <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
@@ -138,8 +148,10 @@
                             <button class="btn-time btn px-2 py-1">Remote</button>
                             <button class="btn-desc btn px-2 py-1">Senior level</button>
                         </div>
+                        </a>
                     </div>
                     <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <a href="#">
                         <div class="job-icon d-flex justify-content-between">
                             <img src="asset/job-item-4.png" class="job-logo">
                             <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
@@ -151,8 +163,10 @@
                             <button class="btn-time btn px-2 py-1">Part Time</button>
                             <button class="btn-desc btn px-2 py-1">Senior Level</button>
                         </div>
+                        </a>
                     </div>
                     <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <a href="#">
                         <div class="job-icon d-flex justify-content-between">
                             <img src="asset/job-item-5.png" class="job-logo">
                             <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
@@ -165,8 +179,10 @@
                             <button class="btn-time btn px-2 py-1">Full Time</button>
                             <button class="btn-desc btn px-2 py-1">Senior Leve</button>
                         </div>
+                        </a>
                     </div>
                     <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                        <a href="#">
                         <div class="job-icon d-flex justify-content-between">
                             <img src="asset/job-item-6.png" class="job-logo">
                             <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
@@ -178,8 +194,10 @@
                             <button class="btn-time btn px-2 py-1">Remote</button>
                             <button class="btn-desc btn px-2 py-1">Junior</button>
                         </div>
+                        </a>
                     </div>
                     <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                        <a href="#">
                         <div class="job-icon d-flex justify-content-between">
                             <img src="asset/job-item-7.png" class="job-logo">
                             <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
@@ -191,8 +209,10 @@
                             <button class="btn-time btn px-2 py-1">Full Time</button>
                             <button class="btn-desc btn px-2 py-1">Senior Level</button>
                         </div>
+                        </a>
                     </div>
                     <div class="job-item text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                        <a href="#">
                         <div class="job-icon d-flex justify-content-between">
                             <img src="asset/job-item-8.png" class="job-logo">
                             <img src="asset/bookmark-black-icon.png" class="bookmark-icon">
@@ -204,6 +224,7 @@
                             <button class="btn-time btn px-2 py-1">Full Time</button>
                             <button class="btn-desc btn px-2 py-1">Senior Level</button>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -213,50 +234,58 @@
                 <p class="main-subtitle text-center" data-aos="fade-up" data-aos-duration="1000">+1000 join in Joboard</p>
                 <h1 class="main-title text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Feature Freelancer</h1>
                 <div class="freelancer-contents d-flex justify-content-between">
-                    <div class="freelancer-item yellow d-flex flex-column flex-sm-row justify-content-between position-relative" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="profile-freelancer order-2 order-sm-1">
-                            <img src="asset/freelancer-1.png" alt="">
+                    <div class="wrap-freelancer" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="freelancer-item yellow d-flex flex-column flex-sm-row justify-content-between position-relative">
+                            <div class="profile-freelancer order-2 order-sm-1">
+                                <img src="asset/freelancer-1.png" alt="">
+                            </div>
+                            <div class="text-freelancer py-3 d-flex flex-column justify-content-between  order-1 order-sm-2">
+                                <h3 class="freelancer-caption text-center text-sm-start">Help you build an good product with a research</h3>
+                                <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
+                                <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
+                            </div>
+                            <img src="asset/petik.png" class="petik position-absolute">
                         </div>
-                        <div class="text-freelancer py-3 d-flex flex-column justify-content-between  order-1 order-sm-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                            <h3 class="freelancer-caption text-center text-sm-start">Help you build an good product with a research</h3>
-                            <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
-                            <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
-                        </div>
-                        <img src="asset/petik.png" class="petik position-absolute">
                     </div>
-                    <div class="freelancer-item pink d-flex flex-column flex-sm-row justify-content-between position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                        <div class="profile-freelancer order-2 order-sm-1">
-                            <img src="asset/freelancer-2.png" alt="">
+                    <div class="wrap-freelancer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="freelancer-item pink d-flex flex-column flex-sm-row justify-content-between position-relative">
+                            <div class="profile-freelancer order-2 order-sm-1">
+                                <img src="asset/freelancer-2.png" alt="">
+                            </div>
+                            <div class="text-freelancer py-3 d-flex flex-column justify-content-between  order-1 order-sm-2">
+                                <h3 class="freelancer-caption text-center text-sm-start">Passionate about creating beautiful & useful things</h3>
+                                <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
+                                <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
+                            </div>
+                            <img src="asset/petik.png" class="petik position-absolute">
                         </div>
-                        <div class="text-freelancer py-3 d-flex flex-column justify-content-between  order-1 order-sm-2">
-                            <h3 class="freelancer-caption text-center text-sm-start">Passionate about creating beautiful & useful things</h3>
-                            <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
-                            <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
-                        </div>
-                        <img src="asset/petik.png" class="petik position-absolute">
                     </div>
-                    <div class="freelancer-item orange d-flex flex-column flex-sm-row justify-content-between position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                        <div class="profile-freelancer order-2 order-sm-1">
-                            <img src="asset/freelancer-3.png" alt="">
+                    <div class="wrap-freelancer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="freelancer-item orange d-flex flex-column flex-sm-row justify-content-between position-relative">
+                            <div class="profile-freelancer order-2 order-sm-1">
+                                <img src="asset/freelancer-3.png" alt="">
+                            </div>
+                            <div class="text-freelancer py-3 d-flex flex-column justify-content-between  order-1 order-sm-2">
+                                <h3 class="freelancer-caption text-center text-sm-start">Love to combine simplicity with usability in design</h3>
+                                <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
+                                <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
+                            </div>
+                            <img src="asset/petik.png" class="petik position-absolute">
                         </div>
-                        <div class="text-freelancer py-3 d-flex flex-column justify-content-between  order-1 order-sm-2">
-                            <h3 class="freelancer-caption text-center text-sm-start">Love to combine simplicity with usability in design</h3>
-                            <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
-                            <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
-                        </div>
-                        <img src="asset/petik.png" class="petik position-absolute">
                     </div>
-                    <div class="freelancer-item blue d-flex flex-column flex-sm-row justify-content-between position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                        <div class="profile-freelancer order-2 order-sm-1">
-                            <img src="asset/freelancer-4.png" alt="">
+                   <div class="wrap-freelancer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <div class="freelancer-item blue d-flex flex-column flex-sm-row justify-content-between position-relative">
+                            <div class="profile-freelancer order-2 order-sm-1">
+                                <img src="asset/freelancer-4.png" alt="">
+                            </div>
+                            <div class="text-freelancer py-3 d-flex flex-column justify-content-between order-1 order-sm-2">
+                                <h3 class="freelancer-caption text-center text-sm-start">Design & Code Avaliable for New Project</h3>
+                                <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
+                                <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
+                            </div>
+                            <img src="asset/petik.png" class="petik position-absolute">
                         </div>
-                        <div class="text-freelancer py-3 d-flex flex-column justify-content-between order-1 order-sm-2">
-                            <h3 class="freelancer-caption text-center text-sm-start">Design & Code Avaliable for New Project</h3>
-                            <p class="freelancer-name text-center text-sm-start">Jessie Cabello</p>
-                            <p class="freelancer-job text-center text-sm-start">Product Design at Gojekin</p>
-                        </div>
-                        <img src="asset/petik.png" class="petik position-absolute">
-                    </div>
+                   </div>
                 </div>
             </div>
         </div>
@@ -315,66 +344,72 @@
                     We are work with largest company around the world
                 </h1>
                 <div class="feedback-contents d-flex flex-row flex-column flex-lg-row justify-content-between">
-                    <div class="feedback-item p-5 p-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                        <div class="star">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                        </div>
-                        <div class="feedback">
-                            <p>"We decided to go online to update and extend our tikecting options. TryBooking made this transition smooth, simple and user frinedly. The pre-festival and backup services was sensational"</p>
-                        </div>
-                        <div class="feedback-profile d-flex justify-content-start align-items-lg-center">
-                            <div class="feedback-profile-image">
-                                <img src="asset/feedback-1.png" alt="">
+                    <div class="wrap-feedback" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="feedback-item p-5 p-lg-4">
+                            <div class="star">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
                             </div>
-                            <div class="feedback-profile-detail">
-                                <p class="details-name">Rodrigo Dimateo</p>
-                                <p class="details-job">HRD Amazonlily</p>
+                            <div class="feedback">
+                                <p>"We decided to go online to update and extend our tikecting options. TryBooking made this transition smooth, simple and user frinedly. The pre-festival and backup services was sensational"</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="feedback-item p-5 p-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                        <div class="star">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                        </div>
-                        <div class="feedback">
-                            <p>"We decided to go online to update and extend our tikecting options. TryBooking made this transition smooth, simple and user frinedly. The pre-festival and backup services was sensational"</p>
-                        </div>
-                        <div class="feedback-profile d-flex justify-content-start justify-content-start align-items-lg-center">
-                            <div class="feedback-profile-image">
-                                <img src="asset/feedback-2.png" alt="">
-                            </div>
-                            <div class="feedback-profile-detail">
-                                <p class="details-name">Jessie Cabello</p>
-                                <p class="details-job">PM Gojekan</p>
+                            <div class="feedback-profile d-flex justify-content-start align-items-lg-center">
+                                <div class="feedback-profile-image">
+                                    <img src="asset/feedback-1.png" alt="">
+                                </div>
+                                <div class="feedback-profile-detail">
+                                    <p class="details-name">Rodrigo Dimateo</p>
+                                    <p class="details-job">HRD Amazonlily</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="feedback-item p-5 p-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                        <div class="star">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                            <img src="asset/star-icon.png" alt="">
-                        </div>
-                        <div class="feedback">
-                            <p>"We decided to go online to update and extend our tikecting options. TryBooking made this transition smooth, simple and user frinedly. The pre-festival and backup services was sensational"</p>
-                        </div>
-                        <div class="feedback-profile d-flex justify-content-start justify-content-start align-items-lg-center">
-                            <div class="feedback-profile-image">
-                                <img src="asset/feedback-3.png" alt="">
+                    <div class="wrap-feedback" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="feedback-item p-5 p-lg-4">
+                            <div class="star">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
                             </div>
-                            <div class="feedback-profile-detail">
-                                <p class="details-name">Jamesh Davidson</p>
-                                <p class="details-job">CEO RuangGurih</p>
+                            <div class="feedback">
+                                <p>"We decided to go online to update and extend our tikecting options. TryBooking made this transition smooth, simple and user frinedly. The pre-festival and backup services was sensational"</p>
+                            </div>
+                            <div class="feedback-profile d-flex justify-content-start justify-content-start align-items-lg-center">
+                                <div class="feedback-profile-image">
+                                    <img src="asset/feedback-2.png" alt="">
+                                </div>
+                                <div class="feedback-profile-detail">
+                                    <p class="details-name">Jessie Cabello</p>
+                                    <p class="details-job">PM Gojekan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-feedback" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="feedback-item p-5 p-lg-4">
+                            <div class="star">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
+                                <img src="asset/star-icon.png" alt="">
+                            </div>
+                            <div class="feedback">
+                                <p>"We decided to go online to update and extend our tikecting options. TryBooking made this transition smooth, simple and user frinedly. The pre-festival and backup services was sensational"</p>
+                            </div>
+                            <div class="feedback-profile d-flex justify-content-start justify-content-start align-items-lg-center">
+                                <div class="feedback-profile-image">
+                                    <img src="asset/feedback-3.png" alt="">
+                                </div>
+                                <div class="feedback-profile-detail">
+                                    <p class="details-name">Jamesh Davidson</p>
+                                    <p class="details-job">CEO RuangGurih</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -387,7 +422,7 @@
                     <h1 class="connect-title text-lg-start text-center text-xl-start" data-aos="fade-up" data-aos-duration="1000">
                         Connect with freelancer now more easier with us.
                     </h1>
-                    <button class="btn bg-black dark-hover text-white px-5 py-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Create a Project</button>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><button class="btn bg-black dark-hover text-white px-5 py-3">Create a Project</button></a>
                 </div>
                 <div class="image-connect position-relative d-flex justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <img src="asset/image-connect.png" class="image-connect position-relative">
@@ -402,35 +437,35 @@
                     <div class="col-xl-6 col-lg-12 col-md-12 d-flex flex-column justify-content-around align-items-xl-start ps-0 ps-xl-5 order-xl-1 order-lg-5 order-5 justify-content-lg-between align-items-lg-center justify-content-md-between align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                         <h1 class="footer-logo"><span>Jo</span>board.</h1>
                         <div class="footer-sosmed d-flex justify-content-between">
-                            <img src="asset/instagram-icon.png" alt="">
-                            <img src="asset/telegram-icon.png" alt="">
-                            <img src="asset/linkedin-icon.png" alt="">
-                            <img src="asset/twitter-icon.png" alt="">
+                            <a href="#"><img src="asset/instagram-icon.png" alt=""></a>
+                            <a href="#"><img src="asset/telegram-icon.png" alt=""></a>
+                            <a href="#"><img src="asset/linkedin-icon.png" alt=""></a>
+                            <a href="#"><img src="asset/twitter-icon.png" alt=""></a>
                         </div>
                         <p class="footer-copyright">
                             &copy; Help Center
                         </p>
                     </div>
-                    <div class="col-xl-2 col-lg-4 col-sm-4 col-12 footer-list text-xl-start text-lg-center text-center order-2">
-                        <p class="list-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Categories</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">Grapich & Design</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Digital Marketing</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Writing & Translation</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Video & Animation</a></p>
+                    <div class="col-xl-2 col-lg-4 col-sm-4 col-12 footer-list text-xl-start text-lg-center text-center order-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <p class="list-head"><a href="#">Categories</a></p>
+                        <p class="list-item"><a href="#">Grapich & Design</a></p>
+                        <p class="list-item"><a href="#">Digital Marketing</a></p>
+                        <p class="list-item"><a href="#">Writing & Translation</a></p>
+                        <p class="list-item"><a href="#">Video & Animation</a></p>
                     </div>
-                    <div class="col-xl-2 col-lg-4 col-sm-4 col-12 footer-list text-xl-start text-lg-center text-center order-3">
-                        <p class="list-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">Community</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Grapich & Design</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Digital Marketing</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Writing & Translation</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Video & Animation</a></p>
+                    <div class="col-xl-2 col-lg-4 col-sm-4 col-12 footer-list text-xl-start text-lg-center text-center order-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <p class="list-head"><a href="#">Community</a></p>
+                        <p class="list-item"><a href="#">Grapich & Design</a></p>
+                        <p class="list-item"><a href="#">Digital Marketing</a></p>
+                        <p class="list-item"><a href="#">Writing & Translation</a></p>
+                        <p class="list-item"><a href="#">Video & Animation</a></p>
                     </div>
-                    <div class="col-xl-2 col-lg-4 col-sm-4 col-12 footer-list text-xl-start text-lg-center text-center order-4">
-                        <p class="list-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Company</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Grapich & Design</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Digital Marketing</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Writing & Translation</a></p>
-                        <p class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"><a href="#">Video & Animation</a></p>
+                    <div class="col-xl-2 col-lg-4 col-sm-4 col-12 footer-list text-xl-start text-lg-center text-center order-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <p class="list-head"><a href="#">Company</a></p>
+                        <p class="list-item"><a href="#">Grapich & Design</a></p>
+                        <p class="list-item"><a href="#">Digital Marketing</a></p>
+                        <p class="list-item"><a href="#">Writing & Translation</a></p>
+                        <p class="list-item"><a href="#">Video & Animation</a></p>
                     </div>
                 </div>
             </div>
@@ -441,22 +476,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+        });
     </script>
     <script>
         var nav = document.getElementById("page");
-
-        function showNavigator(){
-            if(nav.style.opacity == 0){
-                nav.style.opacity = 100;
-                nav.style.transitionDuration = "0.5s";
-                // nav.translateZ = "2px";
-            } else {
-                nav.style.opacity = 00;
-                nav.style.transitionDuration = "0.5s";
-                // nav.translateZ = "-2px";
-            }
-        }
 
         window.onscroll = function() {myFunction()};
 
@@ -468,6 +493,9 @@
 
         window.onresize = function(){
             nav.style.opacity = 0;
+            if($(".hamburger").hasClass("is-active")){
+                $(".hamburger").toggleClass("is-active");
+            }
         }
 
         $("#toogle-button").on('click', function(){
@@ -481,7 +509,6 @@
         })
 
         $('.list-solution').on('scroll', function(){
-            console.log("A");
             $(this).find('.path').css(
                 {"animationName": "dash"},
                 {"animationDuration": "5s"},
@@ -502,6 +529,19 @@
                     )
                 }
             })
+
+            $(".hamburger").click(function(){
+                $(this).toggleClass("is-active");
+                if($(".hamburger").hasClass("is-active")){
+                    nav.style.opacity = 100;
+                    nav.style.transitionDuration = "0.5s";
+                    // nav.translateZ = "2px";
+                } else {
+                    nav.style.opacity = 00;
+                    nav.style.transitionDuration = "0.5s";
+                    // nav.translateZ = "-2px";
+                }
+            });
         })
         
     </script>
