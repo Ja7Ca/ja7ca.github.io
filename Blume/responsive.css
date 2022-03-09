@@ -54,7 +54,7 @@
     }
 
     .banner-title{
-        font-size: 100px;
+        font-size: 100c px;
     }
 
     .main-best .main-subtitle{
@@ -248,6 +248,14 @@
 }
 
 @media (max-width: 575.9px) {
+    #main{
+        padding: 0;
+    }
+
+    .main-best, .main-another, .main-about, .main-diskon{
+        margin: 100px 0;
+    }
+
     .hamburger .line{
         width: 30px;
         height: 3px;
@@ -368,12 +376,32 @@
         font-size: 32px;
     }
 
+    .main-diskon .container{
+        background-image: url("assets/bg-diskon.png");
+    }
+
+    .main-diskon img{
+        display: none;
+    }
+
     .diskon-item{
         width: 100% !important;
     }
 
+    .diskon-content{
+        position: relative !important;
+        width: 100%;
+        padding: 40px 0 0 0 !important;
+    }
+
+    .row{
+        margin: 0;
+        padding: 0;
+    }
+
     .col-12{
-        margin: 20px 0;
+        margin: 20px 0 !important;
+        padding: 0;
         text-align: center;
     }
 

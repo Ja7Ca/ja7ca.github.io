@@ -300,7 +300,6 @@
 
 .another-item{
     position: relative;
-    transition-duration: 0.5s;
     border-radius: 10px;
 }
 
@@ -308,14 +307,19 @@
     border-radius: 10px;
 }
 
-.another-item:hover{
+.another-item img:first-child, .another-item h3{
+    transition-duration: 0.5s;
+}
+
+.another-item:hover img:first-child, .another-item:hover h3{
     transform: scale(1.05);
     z-index: 10;
+    transition-duration: 0.5s;
 }
 
 .another-item:hover img:first-child{
     box-shadow: 0 -15px 100px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.5);
-    transition-duration: 0.5s;
+    /* transition-duration: 0.5s; */
 }
 
 .another-item:nth-child(1), .another-item:nth-child(3){
@@ -440,4 +444,5 @@
 
 .col-12 a:hover{
     color: white;
+    margin: 0;
 }
