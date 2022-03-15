@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Beyond-Earth</title>
 </head>
 <body>
@@ -118,7 +120,7 @@
                             </svg>
                         </a>
                     </div>
-                    <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="header-svg position-relative" width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.7929 0L1.20711 0C0.761654 0 0.538571 0.538571 0.853554 0.853554L5.64645 5.64645C5.84171 5.84171 6.15829 5.84171 6.35355 5.64645L11.1464 0.853553C11.4614 0.538571 11.2383 0 10.7929 0Z" fill="#2BCCE0"/>
                     </svg>
                 </div>
@@ -129,9 +131,7 @@
         <div class="container">
             <div class="limit-content d-flex justify-content-around align-items-center">
                 <div class="limit-item">
-                    <h1 class="limit-title">
-                        500<span>+</span>
-                    </h1>
+                    <h1 class="limit-title" data-value="500" id="count-1">0<span>+</span></h1>
                     <p class="limit-subtitle">
                         Active users
                     </p>
@@ -141,9 +141,7 @@
                     <path d="M5.71692 10.3536C5.52165 10.1583 5.52165 9.84171 5.71692 9.64645L9.6469 5.71652C9.84216 5.52126 10.1587 5.52126 10.354 5.71652L14.284 9.64645C14.4792 9.84171 14.4792 10.1583 14.284 10.3536L10.354 14.2835C10.1587 14.4788 9.84216 14.4788 9.64689 14.2835L5.71692 10.3536Z" fill="#E99300" stroke="white"/>
                 </svg>
                 <div class="limit-item">
-                    <h1 class="limit-title">
-                        More than <span>1000</span>
-                    </h1>
+                    <h1 class="limit-title">More than <span class="limit-count" data-value="1000" id="count-2">0</span></h1>
                     <p class="limit-subtitle">
                         Collectible Characters
                     </p>
@@ -153,9 +151,7 @@
                     <path d="M5.71692 10.3536C5.52165 10.1583 5.52165 9.84171 5.71692 9.64645L9.6469 5.71652C9.84216 5.52126 10.1587 5.52126 10.354 5.71652L14.284 9.64645C14.4792 9.84171 14.4792 10.1583 14.284 10.3536L10.354 14.2835C10.1587 14.4788 9.84216 14.4788 9.64689 14.2835L5.71692 10.3536Z" fill="#E99300" stroke="white"/>
                 </svg>
                 <div class="limit-item">
-                    <h1 class="limit-title">
-                        5000<span>+</span>
-                    </h1>
+                    <h1 class="limit-title" data-value="5000" id="count-3">0<span>+</span></h1>
                     <p class="limit-subtitle">
                         More members
                     </p>
@@ -302,7 +298,7 @@
                     </svg>
             </div>
             <div class="wrap-galactic">
-                <div class="galactic-content d-flex justify-content-between position-relative align-items-center">
+                <div class="galactic-content d-flex justify-content-between position-relative align-items-center owl-carousel">
                     <div class="galactic-item position-relative">
                         <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
                         <img src="asset/galactic-border.png" class="galactic-border">  
@@ -312,7 +308,7 @@
                             <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
                         </div>                      
                     </div>
-                    <div class="galactic-item position-relative">
+                    <div class="item galactic-item position-relative">
                         <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
                         <img src="asset/galactic-border.png" class="galactic-border">  
                         <img src="asset/galactic-2.png" class="galactic-image position-absolute">
@@ -321,7 +317,7 @@
                             <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
                         </div>
                     </div>
-                    <div class="galactic-item position-relative">
+                    <div class="item galactic-item position-relative">
                         <div class="bg-black position-absolute" style="width: 100%; height: 100%; opacity: 50%;"></div>
                         <img src="asset/galactic-border.png" class="galactic-border">  
                         <img src="asset/galactic-3.png" class="galactic-image position-absolute"> 
@@ -330,7 +326,7 @@
                             <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
                         </div>                                                                    
                     </div>
-                    <div class="galactic-item position-relative">
+                    <div class="item galactic-item position-relative">
                         <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
                         <img src="asset/galactic-border.png" class="galactic-border">  
                         <img src="asset/galactic-4.png" class="galactic-image position-absolute">
@@ -339,7 +335,7 @@
                             <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
                         </div>
                     </div>
-                    <div class="galactic-item position-relative">
+                    <div class="item galactic-item position-relative">
                         <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
                         <img src="asset/galactic-border.png" class="galactic-border">  
                         <img src="asset/galactic-5.png" class="galactic-image position-absolute">
@@ -348,7 +344,7 @@
                             <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
                         </div>
                     </div>
-                    <div class="galactic-item position-relative">
+                    <div class="item galactic-item position-relative">
                         <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
                         <img src="asset/galactic-border.png" class="galactic-border">  
                         <img src="asset/galactic-6.png" class="galactic-image position-absolute">
@@ -357,7 +353,7 @@
                             <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
                         </div>
                     </div>
-                    <div class="galactic-item position-relative">
+                    <div class="item galactic-item position-relative">
                         <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
                         <img src="asset/galactic-border.png" class="galactic-border">  
                         <img src="asset/galactic-7.png" class="galactic-image position-absolute">
@@ -366,7 +362,7 @@
                             <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
                         </div>
                     </div>
-                    <div class="galactic-item position-relative">
+                    <div class="item galactic-item position-relative">
                         <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
                         <img src="asset/galactic-border.png" class="galactic-border">  
                         <img src="asset/galactic-8.png" class="galactic-image position-absolute">
@@ -377,11 +373,85 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="owl-carousel d-flex">
+                <div class="item galactic-item position-relative">
+                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
+                    <img src="asset/galactic-border.png" class="galactic-border">  
+                    <img src="asset/galactic-1.png" class="galactic-image position-absolute">
+                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
+                        <h1 class="galactic-title">Human 1</h1>
+                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
+                    </div>                      
+                </div>
+                <div class="item galactic-item position-relative">
+                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
+                    <img src="asset/galactic-border.png" class="galactic-border">  
+                    <img src="asset/galactic-2.png" class="galactic-image position-absolute">
+                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
+                        <h1 class="galactic-title">Human 2</h1>
+                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
+                    </div>
+                </div>
+                <div class="item galactic-item position-relative">
+                    <div class="bg-black position-absolute" style="width: 100%; height: 100%; opacity: 50%;"></div>
+                    <img src="asset/galactic-border.png" class="galactic-border">  
+                    <img src="asset/galactic-3.png" class="galactic-image position-absolute"> 
+                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
+                        <h1 class="galactic-title">Human 3</h1>
+                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
+                    </div>                                                                    
+                </div>
+                <div class="item galactic-item position-relative">
+                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
+                    <img src="asset/galactic-border.png" class="galactic-border">  
+                    <img src="asset/galactic-4.png" class="galactic-image position-absolute">
+                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
+                        <h1 class="galactic-title">Human 4</h1>
+                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
+                    </div>
+                </div>
+                <div class="item galactic-item position-relative">
+                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
+                    <img src="asset/galactic-border.png" class="galactic-border">  
+                    <img src="asset/galactic-5.png" class="galactic-image position-absolute">
+                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
+                        <h1 class="galactic-title">Human 5</h1>
+                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
+                    </div>
+                </div>
+                <div class="item galactic-item position-relative">
+                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
+                    <img src="asset/galactic-border.png" class="galactic-border">  
+                    <img src="asset/galactic-6.png" class="galactic-image position-absolute">
+                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
+                        <h1 class="galactic-title">Human 6</h1>
+                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
+                    </div>
+                </div>
+                <div class="item galactic-item position-relative">
+                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
+                    <img src="asset/galactic-border.png" class="galactic-border">  
+                    <img src="asset/galactic-7.png" class="galactic-image position-absolute">
+                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
+                        <h1 class="galactic-title">Human 7</h1>
+                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
+                    </div>
+                </div>
+                <div class="item galactic-item position-relative">
+                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
+                    <img src="asset/galactic-border.png" class="galactic-border">  
+                    <img src="asset/galactic-8.png" class="galactic-image position-absolute">
+                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
+                        <h1 class="galactic-title">Human 8</h1>
+                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
+                    </div>
+                </div>
+            </div> -->
         </div>
         <div class="main-earn">
             <div class="container d-flex justify-content-between">
                 <div class="earn-text d-flex flex-column justify-content-center">
-                    <h1 class="main-title">Our Team</h1>
+                    <h1 class="main-title">Play to earn</h1>
                     <svg width="317" height="12" viewBox="0 0 317 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="6.64818" height="6.64818" transform="matrix(0.725352 -0.688378 0.725352 0.688378 154 7.42334)" fill="#2BCCE0"/>
                         <path d="M0 0H155L149.5 5.69416V2.84708H0V0Z" fill="#2BCCE0"/>
@@ -409,14 +479,15 @@
             <div class="calculate-top d-flex justify-content-between">
                 <div class="calculated-item position-relative d-flex flex-column justify-content-between">
                     <h1 class="calculated-title">Total Stacked</h1>
-                    <h1 class="calculated-number">11,621,09 <span>Beo</span></h1>
-                    <p class="calculated-subtitle"><span>$23B</span></p>
+                    <h1 class="calculated-number" data-value="11621" id="count-4">0<span>Beo</span></h1>
+                    <p class="calculated-subtitle"><span>$<span data-value="23" id="count-5">0</span>B</p>
                     <img src="asset/etherium-blue.png" class="etherium-bg position-absolute">
                     <img src="asset/etherium-blue-light.png" class="etherium-bg etherium-hide position-absolute">
                 </div>
-                <div class="calculated-item d-flex flex-column justify-content-between">
+                <div class="calculated-item d-flex flex-column justify-content-between position-relative bg-opacity-0">
+                    <img src="asset/etherium-bg.png" class="position-absolute" style="top: 0; left: 0; width: 100%;">
                     <h1 class="calculated-title">Token Holders</h1>
-                    <h1 class="calculated-number">200%</h1>
+                    <h1 class="calculated-number" data-value="200" id="count-6">0%</h1>
                     <p class="calculated-subtitle">Beo</p>
                 </div>
             </div>
@@ -425,8 +496,8 @@
                     <h1 class="calculated-title">Total Stacked</h1>
                     <div class="calculated-contents d-flex justify-content-between align-items-center">
                         <div class="calculated-content">
-                            <p class="calculated-caption">BEO PRICE <span>+1,5%</span></p>
-                            <h1 class="calculated-title">$2,522,90</h1>
+                            <p class="calculated-caption">BEO PRICE <span>+<span data-value="15" id="count-7">0</span>%</span></p>
+                            <h1 class="calculated-title" data-value="2522" id="count-8">$0</h1>
                         </div>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.707113 10.7071C0.316586 10.3166 0.316587 9.68342 0.707116 9.29289L9.2929 0.707228C9.68342 0.31671 10.3166 0.316709 10.7071 0.707227L19.2929 9.29289C19.6834 9.68341 19.6834 10.3166 19.2929 10.7071L10.7071 19.2929C10.3166 19.6834 9.68342 19.6834 9.29289 19.2929L0.707113 10.7071Z" fill="#E99300"/>
@@ -434,7 +505,7 @@
                         </svg>
                         <div class="calculated-content">
                             <p class="calculated-caption">DAILY REWARD</p>
-                            <h1 class="calculated-title">65.816 BEO</h1>
+                            <h1 class="calculated-title" data-value="65816.90" id="count-9">0 BEO</h1>
                         </div>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.707113 10.7071C0.316586 10.3166 0.316587 9.68342 0.707116 9.29289L9.2929 0.707228C9.68342 0.31671 10.3166 0.316709 10.7071 0.707227L19.2929 9.29289C19.6834 9.68341 19.6834 10.3166 19.2929 10.7071L10.7071 19.2929C10.3166 19.6834 9.68342 19.6834 9.29289 19.2929L0.707113 10.7071Z" fill="#E99300"/>
@@ -442,7 +513,7 @@
                         </svg>
                         <div class="calculated-content">
                             <p class="calculated-caption">CIRCULATING SUPPLY</p>
-                            <h1 class="calculated-title">78,231,5433 BEO</h1>
+                            <h1 class="calculated-title" data-value="78231" id="count-10">0 BEO</h1>
                         </div>
                     </div>
                 </div>
@@ -450,7 +521,7 @@
         </div>
         <div class="main-team">
             <div class="container text-center">
-                <h1 class="main-title">Play to Earn</h1>
+                <h1 class="main-title">Our Team</h1>
                     <svg width="317" height="12" viewBox="0 0 317 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="6.64818" height="6.64818" transform="matrix(0.725352 -0.688378 0.725352 0.688378 154 7.42334)" fill="#2BCCE0"/>
                         <path d="M0 0H155L149.5 5.69416V2.84708H0V0Z" fill="#2BCCE0"/>
@@ -665,12 +736,12 @@
                 <hr style="height: 2px; background-color: white; width: 100%;">
                 <div class="footer-copyright d-flex justify-content-between">
                     <div class="copyright-item d-flex justify-content-between">
-                        <p>2021 BeyondEarth</p>
-                        <p>All Rights Reserved</p>
+                        <p><a href="#">2021 BeyondEarth</a></p>
+                        <p><a href="#">All Rights Reserved</a></p>
                     </div>
                     <div class="copyright-item d-flex justify-content-between">
-                        <p>Privacy Notice</p>
-                        <p>Cookie Notice</p>
+                        <p><a href="#">Privacy Notice</a></p>
+                        <p><a href="#">Cookie Notice</a></p>
                     </div>
                 </div>
             </div>
@@ -680,5 +751,27 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel(
+                {loop: true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }}
+            );
+        });
+    </script>
 </body>
 </html>
