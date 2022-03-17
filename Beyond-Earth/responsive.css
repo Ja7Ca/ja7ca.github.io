@@ -99,6 +99,8 @@
     .feature-text{
         width: 100%;
         transform: scale(0.8);
+        overflow-x: auto;
+        overflow-y: hidden;
     }
 
     .feature-text div:nth-child(4) #shadow-feature{
@@ -405,6 +407,36 @@
 
     .feature-text div:nth-child(4) #shadow-feature{
         height: 100%;
+    }
+
+    .owl-stage .center .bg-black{
+        opacity: 0 !important;
+    }
+
+    .owl-stage .center .galactic-item{
+        overflow: visible !important;
+    }
+
+    .owl-stage .center .galactic-border{
+        width: 378px;
+        height: 628px;
+        /* overflow: hidden; */
+    }
+
+    .owl-stage .center .galactic-image{
+        transform: scale(1.1);
+        z-index: 2;
+        opacity: 100;
+        top: -10%;
+    }
+
+    .owl-stage .center .galactic-text-hide{
+        display: flex !important;
+        z-index: 3;
+    }
+
+    .galactic-item:hover{
+        
     }
 
     .earn-image{
