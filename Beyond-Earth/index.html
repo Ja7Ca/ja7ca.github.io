@@ -225,12 +225,12 @@
                         </linearGradient>
                         </defs>
                     </svg>
-                <div class="feature-content d-flex flex-column flex-lg-row">
+                <div class="feature-content d-flex flex-column flex-lg-row position-relative">
                     <div class="feature-image position-relative" data-aos="fade-up" data-aos-duration="1000">
                         <img src="asset/feature-1.png" class="feature-1 position-relative">
                         <img src="asset/feature-2.png" class="feature-2 position-absolute">
                     </div>
-                    <div class="feature-text d-flex position-relative" data-aos="fade-up" data-aos-duration="1000">
+                    <div id="feature-text-nocarousel" class="feature-text d-flex position-relative" data-aos="fade-up" data-aos-duration="1000">
                         <div class="feature-item-short position-relative toogle-feature">
                             <div id="shadow-feature" class="position-absolute"></div>
                             <div class="feature-item-text d-flex flex-column justify-content-start align-items-start position-absolute">
@@ -288,6 +288,71 @@
                             <img src="asset/border-feature-long-svg.png" class="border-feature"> 
                         </div>
                     </div>
+                    <div id="feature-text-carousel" class="feature-text d-flex position-relative owl-carousel" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="feature-item-short position-relative toogle-feature">
+                            <div id="shadow-feature" class="position-absolute"></div>
+                            <div class="feature-item-text d-flex flex-column justify-content-start align-items-start position-absolute">
+                                <h1 class="title-short">PVP / PVE</h1>
+                                    <svg class="hide-short" width="119" height="6" viewBox="0 0 119 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0H118.863L112.544 5.99974V3.15266L0 2.84708V0Z" fill="#E99300"/>
+                                    <path d="M0 0H118.863L112.544 5.99974V3.15266L0 2.84708V0Z" fill="#E99300"/>
+                                </svg>
+                                <p class="subtitle-short">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque possimus tempore quidem adipisci neque itaque aliquam inventore voluptatum porro? Rem suscipit itaque asperiores, est autem voluptatibus illo incidunt. Explicabo.
+                                </p>
+                            </div>
+                            <img src="asset/border-feature-svg.png" class="border-feature">
+                        </div>
+                        <div class="feature-item-short position-relative toogle-feature">
+                            <div id="shadow-feature" class="position-absolute"></div>
+                            <div class="feature-item-text d-flex flex-column justify-content-start align-items-start position-absolute">
+                                <h1 class="title-short">COMMUNITY LORE</h1>
+                                    <svg class="hide-short" width="119" height="6" viewBox="0 0 119 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0H118.863L112.544 5.99974V3.15266L0 2.84708V0Z" fill="#E99300"/>
+                                    <path d="M0 0H118.863L112.544 5.99974V3.15266L0 2.84708V0Z" fill="#E99300"/>
+                                </svg>
+                                <p class="subtitle-short">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque possimus tempore quidem adipisci neque itaque aliquam inventore voluptatum porro? Rem suscipit itaque asperiores, est autem voluptatibus illo incidunt. Explicabo.
+                                </p>
+                            </div>
+                            <img src="asset/border-feature-svg.png" class="border-feature"> 
+                        </div>
+                        <div class="feature-item-short position-relative toogle-feature">
+                            <div id="shadow-feature" class="position-absolute"></div>
+                            <div class="feature-item-text d-flex flex-column justify-content-start align-items-start position-absolute">
+                                <h1 class="title-short">NFT POWERED</h1>
+                                    <svg class="hide-short" width="119" height="6" viewBox="0 0 119 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0H118.863L112.544 5.99974V3.15266L0 2.84708V0Z" fill="#E99300"/>
+                                    <path d="M0 0H118.863L112.544 5.99974V3.15266L0 2.84708V0Z" fill="#E99300"/>
+                                </svg>
+                                <p class="subtitle-short">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque possimus tempore quidem adipisci neque itaque aliquam inventore voluptatum porro? Rem suscipit itaque asperiores, est autem voluptatibus illo incidunt. Explicabo.
+                                </p>
+                            </div>
+                            <img src="asset/border-feature-svg.png" class="border-feature"> 
+                        </div>
+                        <div class="feature-item-long position-relative toogle-feature">
+                            <div id="shadow-feature" class="position-absolute"></div>
+                            <div class="feature-item-text position-absolute">
+                                <h1 class="title-long">MMORPG</h1>
+                                <svg width="119" height="6" viewBox="0 0 119 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0H118.863L112.544 5.99974V3.15266L0 2.84708V0Z" fill="#E99300"/>
+                                    <path d="M0 0H118.863L112.544 5.99974V3.15266L0 2.84708V0Z" fill="#E99300"/>
+                                </svg>
+                                <p class="subtitle-long">
+                                    BEO has traditional elements of roleplay and exploration the MMO’s we love have, combined with the play to earn mechanics of blockchain technology making it the first of its kind.
+                                </p>
+                            </div>
+                            <img src="asset/border-feature-long-svg.png" class="border-feature"> 
+                        </div>
+                    </div>
+                    <!-- <div class="position-absolute" style="color: white !important; bottom: 2%; width: 100%;">
+                        <marquee behavior="" direction="right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                          </svg>
+                        </marquee>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -696,11 +761,31 @@
     <script src="owl.carousel.min.js"></script>
     <script>
         $(document).ready(function(){
-            $(".owl-carousel").owlCarousel(
-                {loop: true,
-                margin:0,
-                nav:true,
+            $(".wrap-galactic .owl-carousel").owlCarousel(
+                {loop:true,
+                margin:10,
+                nav:false,
                 center: true,
+                autoWidth: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }}
+            );
+
+            $("#feature-text-carousel.owl-carousel").owlCarousel(
+                {loop:true,
+                margin:10,
+                nav:false,
+                center: true,
+                autoWidth: true,
                 responsive:{
                     0:{
                         items:1

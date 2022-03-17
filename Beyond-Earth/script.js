@@ -1,6 +1,38 @@
 $(document).ready(function(){
     let nav = document.getElementById("page");
 
+    setInterval(function(){
+        $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature").attr("id", "")
+        $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature").removeClass("animationScale")
+        // $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature").addClass("feature-item-short")
+        // $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature").removeClass("feature-item-long")
+        // $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature .title-long").addClass("title-short").removeClass("title-long")
+        // $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature svg").addClass("hide-short").removeClass("subtitle-short")
+        // $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature .subtitle-long").addClass("subtitle-short").removeClass("subtitle-long")
+        $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature img").attr("src", "./asset/border-feature-long-svg.png")
+
+        $(".feature-text .owl-stage .center").find(".toogle-feature").css("transitonDuration","1s")
+        $(".feature-text .owl-stage .center").find(".toogle-feature").attr("id", "toogle-long");
+        $(".feature-text .owl-stage .center").find(".toogle-feature").removeClass("feature-item-short").addClass("feature-item-long")
+        $(".feature-text .owl-stage .center").find(".toogle-feature").removeClass("animationScale")
+        $(".feature-text .owl-stage .center").find(".toogle-feature").addClass("animationScale");
+        $(".feature-text .owl-stage .center").find(".toogle-feature .title-short").addClass("title-long").removeClass("title-short")
+        $(".feature-text .owl-stage .center").find(".toogle-feature svg").removeClass("hide-short")
+        $(".feature-text .owl-stage .center").find(".toogle-feature .subtitle-short").addClass("subtitle-long").removeClass("subtitle-short")
+        $(".feature-text .owl-stage .center").find(".toogle-feature img").attr("src", "./asset/border-feature-long-svg.png")
+    }, 100)
+
+    console.log(window.innerWidth > 510)
+    if(window.innerWidth > 510){
+        console.log("A")
+        $("#feature-text-nocarousel").addClass("show")
+        $("#feature-text-carousel").addClass("hide")
+    } else {
+        console.log("B")
+        $("#feature-text-nocarousel").addClass("hide")
+        $("#feature-text-carousel").addClass("show")
+    }
+
     $(".toogle-dropdown").mouseenter(function(){
         $(this).find(".menu-dropdown").css(
             {"display": "block"},
@@ -25,18 +57,42 @@ $(document).ready(function(){
         }
     });
 
+    $(window).on("resize", function(){
+        if(window.innerWidth < 510){
+            if(!$("#feature-text-nocarousel").hasClass("hide") && !$("#feature-text-carousel").hasClass("show")){
+                $("#feature-text-nocarousel").removeClass("show")
+                $("#feature-text-nocarousel").addClass("hide")
+                $("#feature-text-carousel").removeClass("hide")
+                $("#feature-text-carousel").addClass("show")
+            }
+        } else {
+            if(!$("#feature-text-nocarousel").hasClass("show") && !$("#feature-text-carousel").hasClass("hide")){
+                $("#feature-text-nocarousel").removeClass("hide")
+                $("#feature-text-nocarousel").addClass("show")
+                $("#feature-text-carousel").removeClass("show")
+                $("#feature-text-carousel").addClass("hide")
+            }
+        }
+        if($(".hamburger").hasClass("is-active")){
+            $(".hamburger").toggleClass("is-active");
+            $("#page").css(
+                {"opacity":"0"},
+                {"transitionDuration": "0.5s"}
+            )
+         }
+        $(".navbar").css("backgroundColor", "transparent")
+        $(".menu-dropdown").css(
+            {"display": "none"},
+            {"transition-duration": "1s"}
+        )
+    })
+
     $(document).on("click", function(){
         $(".menu-dropdown").css(
             {"display": "none"},
             {"transition-duration": "1s"}
         )
     })
-    // $(".menu-dropdown").mouseleave(function(){
-    //     $(this).css(
-    //         {"display": "none"},
-    //         {"transition-duration": "1s"}
-    //     )
-    // })
 
     $(".toogle-feature").on('click', function(){
         var animationEvent = 'webkitAnimationEnd oanimationend msAnimationEnd animationend';
