@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
@@ -23,10 +24,10 @@
                 <div class="nav-logo">
                     <img src="asset/small-logo.png" alt="">
                 </div>
-                <div class="page d-flex justify-content-between align-items-center" id="page">
+                <div class="page d-flex flex-column flex-md-row justify-content-between align-items-center" id="page">
                     <a href="#" class="page-link">Home</a>
                     <a href="#" class="page-link">Mint</a>
-                    <div class="toogle-dropdown position-relative d-flex align-items-center">
+                    <div class="toogle-dropdown position-relative d-flex flex-column flex-md-row align-items-center">
                         <a href="#" class="page-link">Learn</a>
                         <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.7929 0L1.20711 0C0.761654 0 0.538571 0.538571 0.853554 0.853554L5.64645 5.64645C5.84171 5.84171 6.15829 5.84171 6.35355 5.64645L11.1464 0.853553C11.4614 0.538571 11.2383 0 10.7929 0Z" fill="currentColor" />
@@ -37,7 +38,7 @@
                             <a href="#" class="page-link">Learn 3</a>
                         </div>
                     </div>
-                    <div class="toogle-dropdown position-relative d-flex align-items-center">
+                    <div class="toogle-dropdown position-relative d-flex flex-column flex-md-row align-items-center">
                         <a href="#" class="page-link">Market</a>
                         <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.7929 0L1.20711 0C0.761654 0 0.538571 0.538571 0.853554 0.853554L5.64645 5.64645C5.84171 5.84171 6.15829 5.84171 6.35355 5.64645L11.1464 0.853553C11.4614 0.538571 11.2383 0 10.7929 0Z" fill="currentColor"/>
@@ -48,7 +49,7 @@
                             <a href="#" class="page-link">Market 3</a>
                         </div>
                     </div>
-                    <div class="toogle-dropdown position-relative d-flex align-items-center">
+                    <div class="toogle-dropdown position-relative d-flex flex-column flex-md-row align-items-center">
                         <a href="#" class="page-link">Token</a>
                         <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.7929 0L1.20711 0C0.761654 0 0.538571 0.538571 0.853554 0.853554L5.64645 5.64645C5.84171 5.84171 6.15829 5.84171 6.35355 5.64645L11.1464 0.853553C11.4614 0.538571 11.2383 0 10.7929 0Z" fill="currentColor"/>
@@ -59,18 +60,26 @@
                             <a href="#" class="page-link">Token 3</a>
                         </div>
                     </div>
+                    <div class="nav-button">
+                        <a href="#" class="btn border-0">Sign Up</a>
+                    </div>
                 </div>
                 <div class="nav-button">
                     <a href="#" class="btn border-0">Sign Up</a>
+                </div>
+                <div class="hamburger" id="toogle-button">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
                 </div>
             </div>
         </div>
         <div id="banner">
             <div class="container text-center">
-                <div class="image-banner">
+                <div class="image-banner" data-aos="fade-up" data-aos-duration="1000">
                     <img src="asset/logo.png" alt="">
                 </div>
-                <div class="text-banner d-flex flex-column align-items-center justify-content-between pb-5">
+                <div class="text-banner d-flex flex-column align-items-center justify-content-between pb-5" data-aos="fade-up" data-aos-duration="1000">
                     <div class="banner-title">
                         <div class="text-line d-flex justify-content-center align-items-center">
                             <div class="line-title d-flex flex-column justify-content-between">
@@ -129,7 +138,7 @@
     </section>
     <div class="limit">
         <div class="container">
-            <div class="limit-content d-flex justify-content-around align-items-center">
+            <div class="limit-content d-flex flex-column flex-md-row justify-content-around align-items-center">
                 <div class="limit-item">
                     <h1 class="limit-title" data-value="500" id="count-1">0<span>+</span></h1>
                     <p class="limit-subtitle">
@@ -162,9 +171,9 @@
     <section id="main">
         <div class="main-stories position-relative bg-black bg-opacity-50">
             <!-- <img src="asset/bg-stories.png" class="bg-stories position-absolute"> -->
-            <div class="container d-flex align-items-end">
-                <div class="stories-image">
-                    <div class="stories-frame position-relative">
+            <div class="container d-flex flex-column flex-lg-row align-items-end">
+                <div class="stories-image text-center text-lg-start">
+                    <div class="stories-frame position-relative" data-aos="fade-up" data-aos-duration="1000">
                         <svg class="border-iframe position-absolute" width="560" height="320" viewBox="0 0 614 346" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M605.639 19.3503H8.36078V326.65H605.639V19.3503ZM6 17V329H608V17H6Z" fill="#E99300"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M608.096 11L5.90385 11.0001V16.8802H0V329.12H5.90385V335H608.096V329.12H614V16.8802H608.096V11ZM611.638 19.2323H605.735V13.3521L8.26538 13.3522V19.2323H2.36154V326.768H8.26538V332.648H605.735V326.768H611.638V19.2323Z" fill="#E99300"/>
@@ -181,8 +190,8 @@
                         </iframe>  
                     </div>
                 </div>
-                <div class="stories-text">
-                    <h1 class="main-title">Game Stories</h1>
+                <div class="stories-text text-center text-lg-start" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="main-title text-center text-lg-start">Game Stories</h1>
                     <svg width="317" height="12" viewBox="0 0 317 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="6.64818" height="6.64818" transform="matrix(0.725352 -0.688378 0.725352 0.688378 154 7.42334)" fill="#2BCCE0"/>
                         <path d="M0 0H155L149.5 5.69416V2.84708H0V0Z" fill="#2BCCE0"/>
@@ -194,7 +203,7 @@
                         </linearGradient>
                         </defs>
                     </svg>
-                    <div class="main-subtitle">
+                    <div class="main-subtitle text-start">
                         BEO is set in t he near future, 2035 to be exact. The nefarious group called Illuminati took over the world with their agenda 2030. The New World Order as it was called, ushered an alien invasion with the help of a neighboring race. This invasion helped their plan to take over and decimate most of the human race.<br>
                         5 years after the take down, there were barely any humans left. Most have been genetically modified for more than a decade through nano tech, and now are almost bionic in nature. Some of these bred humans disconnect from their programming and the hive mind, going rogue.
                     </div>                        
@@ -204,8 +213,8 @@
         <div class="main-feature position-relative">
             <!-- <img src="asset/bg-feature.png" class="bg-feature position-absolute"> -->
             <div class="container text-center">
-                <h1 class="main-title">Game Stories</h1>
-                    <svg width="317" height="12" viewBox="0 0 317 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h1 class="main-title" data-aos="fade-up" data-aos-duration="1000">Our Core Features</h1>
+                    <svg data-aos="fade-up" data-aos-duration="1000" width="317" height="12" viewBox="0 0 317 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="6.64818" height="6.64818" transform="matrix(0.725352 -0.688378 0.725352 0.688378 154 7.42334)" fill="#2BCCE0"/>
                         <path d="M0 0H155L149.5 5.69416V2.84708H0V0Z" fill="#2BCCE0"/>
                         <path d="M317 0H162L167.5 5.69416V2.84708H317V0Z" fill="url(#paint0_linear_335_1441)"/>
@@ -216,12 +225,12 @@
                         </linearGradient>
                         </defs>
                     </svg>
-                <div class="feature-content d-flex">
-                    <div class="feature-image position-relative">
+                <div class="feature-content d-flex flex-column flex-lg-row">
+                    <div class="feature-image position-relative" data-aos="fade-up" data-aos-duration="1000">
                         <img src="asset/feature-1.png" class="feature-1 position-relative">
                         <img src="asset/feature-2.png" class="feature-2 position-absolute">
                     </div>
-                    <div class="feature-text d-flex">
+                    <div class="feature-text d-flex" data-aos="fade-up" data-aos-duration="1000">
                         <div class="feature-item-short position-relative toogle-feature">
                             <div id="shadow-feature" class="position-absolute"></div>
                             <div class="feature-item-text d-flex flex-column justify-content-start align-items-start position-absolute">
@@ -283,7 +292,7 @@
             </div>
         </div>
         <div class="main-galactic position-relative">
-            <div class="container text-center">
+            <div class="container text-center" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="main-title">Galactic Races</h1>
                     <svg width="317" height="12" viewBox="0 0 317 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="6.64818" height="6.64818" transform="matrix(0.725352 -0.688378 0.725352 0.688378 154 7.42334)" fill="#2BCCE0"/>
@@ -297,7 +306,7 @@
                         </defs>
                     </svg>
             </div>
-            <div class="wrap-galactic">
+            <div class="wrap-galactic" data-aos="fade-up" data-aos-duration="1000">
                 <div class="galactic-content d-flex justify-content-between position-relative align-items-center owl-carousel">
                     <div class="galactic-item position-relative">
                         <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
@@ -373,84 +382,10 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="owl-carousel d-flex">
-                <div class="item galactic-item position-relative">
-                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
-                    <img src="asset/galactic-border.png" class="galactic-border">  
-                    <img src="asset/galactic-1.png" class="galactic-image position-absolute">
-                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
-                        <h1 class="galactic-title">Human 1</h1>
-                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
-                    </div>                      
-                </div>
-                <div class="item galactic-item position-relative">
-                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
-                    <img src="asset/galactic-border.png" class="galactic-border">  
-                    <img src="asset/galactic-2.png" class="galactic-image position-absolute">
-                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
-                        <h1 class="galactic-title">Human 2</h1>
-                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
-                    </div>
-                </div>
-                <div class="item galactic-item position-relative">
-                    <div class="bg-black position-absolute" style="width: 100%; height: 100%; opacity: 50%;"></div>
-                    <img src="asset/galactic-border.png" class="galactic-border">  
-                    <img src="asset/galactic-3.png" class="galactic-image position-absolute"> 
-                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
-                        <h1 class="galactic-title">Human 3</h1>
-                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
-                    </div>                                                                    
-                </div>
-                <div class="item galactic-item position-relative">
-                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
-                    <img src="asset/galactic-border.png" class="galactic-border">  
-                    <img src="asset/galactic-4.png" class="galactic-image position-absolute">
-                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
-                        <h1 class="galactic-title">Human 4</h1>
-                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
-                    </div>
-                </div>
-                <div class="item galactic-item position-relative">
-                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
-                    <img src="asset/galactic-border.png" class="galactic-border">  
-                    <img src="asset/galactic-5.png" class="galactic-image position-absolute">
-                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
-                        <h1 class="galactic-title">Human 5</h1>
-                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
-                    </div>
-                </div>
-                <div class="item galactic-item position-relative">
-                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
-                    <img src="asset/galactic-border.png" class="galactic-border">  
-                    <img src="asset/galactic-6.png" class="galactic-image position-absolute">
-                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
-                        <h1 class="galactic-title">Human 6</h1>
-                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
-                    </div>
-                </div>
-                <div class="item galactic-item position-relative">
-                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
-                    <img src="asset/galactic-border.png" class="galactic-border">  
-                    <img src="asset/galactic-7.png" class="galactic-image position-absolute">
-                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
-                        <h1 class="galactic-title">Human 7</h1>
-                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
-                    </div>
-                </div>
-                <div class="item galactic-item position-relative">
-                    <div class="bg-black bg-opacity-50 position-absolute" style="width: 100%; height: 100%;"></div>
-                    <img src="asset/galactic-border.png" class="galactic-border">  
-                    <img src="asset/galactic-8.png" class="galactic-image position-absolute">
-                    <div class="galactic-text-hide position-absolute d-flex flex-column align-items-center">
-                        <h1 class="galactic-title">Human 8</h1>
-                        <a href="#"><img src="asset/button-galactic.png" class="galactic-button"></a>
-                    </div>
-                </div>
-            </div> -->
         </div>
         <div class="main-earn">
-            <div class="container d-flex justify-content-between">
-                <div class="earn-text d-flex flex-column justify-content-center">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <div class="earn-text d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-duration="1000">
                     <h1 class="main-title">Play to earn</h1>
                     <svg width="317" height="12" viewBox="0 0 317 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="6.64818" height="6.64818" transform="matrix(0.725352 -0.688378 0.725352 0.688378 154 7.42334)" fill="#2BCCE0"/>
@@ -468,7 +403,7 @@
                     </p>
                     <img src="asset/etherum.png" class="image-etherum">
                 </div>
-                <div class="earn-image position-relative">
+                <div class="earn-image position-relative" data-aos="fade-up" data-aos-duration="1000">
                     <img src="asset/earn-1.png" alt="">
                     <img src="asset/earn-2.png" alt="">
                     <img src="asset/earn-3.png" alt="">
@@ -476,7 +411,7 @@
             </div>
         </div>
         <div class="main-calculate">
-            <div class="calculate-top d-flex justify-content-between">
+            <div class="calculate-top d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                 <div class="calculated-item position-relative d-flex flex-column justify-content-between">
                     <h1 class="calculated-title">Total Stacked</h1>
                     <h1 class="calculated-number" data-value="11621" id="count-4">0<span>Beo</span></h1>
@@ -485,16 +420,16 @@
                     <img src="asset/etherium-blue-light.png" class="etherium-bg etherium-hide position-absolute">
                 </div>
                 <div class="calculated-item d-flex flex-column justify-content-between position-relative bg-opacity-0">
-                    <img src="asset/etherium-bg.png" class="position-absolute" style="top: 0; left: 0; width: 100%;">
+                    <img src="asset/etherium-bg.png" id="bg-calculated" class="position-absolute" style="top: 0; left: 0; width: 100%;">
                     <h1 class="calculated-title">Token Holders</h1>
                     <h1 class="calculated-number" data-value="200" id="count-6">0%</h1>
                     <p class="calculated-subtitle">Beo</p>
                 </div>
             </div>
-            <div class="calculated-bottom">
+            <div class="calculated-bottom" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container">
-                    <h1 class="calculated-title">Total Stacked</h1>
-                    <div class="calculated-contents d-flex justify-content-between align-items-center">
+                    <h1 class="calculated-title text-center text-md-start">Beo Stats</h1>
+                    <div class="calculated-contents d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
                         <div class="calculated-content">
                             <p class="calculated-caption">BEO PRICE <span>+<span data-value="15" id="count-7">0</span>%</span></p>
                             <h1 class="calculated-title" data-value="2522" id="count-8">$0</h1>
@@ -521,8 +456,8 @@
         </div>
         <div class="main-team">
             <div class="container text-center">
-                <h1 class="main-title">Our Team</h1>
-                    <svg width="317" height="12" viewBox="0 0 317 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h1 class="main-title" data-aos="fade-up" data-aos-duration="1000">Our Team</h1>
+                    <svg data-aos="fade-up" data-aos-duration="1000" width="317" height="12" viewBox="0 0 317 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="6.64818" height="6.64818" transform="matrix(0.725352 -0.688378 0.725352 0.688378 154 7.42334)" fill="#2BCCE0"/>
                         <path d="M0 0H155L149.5 5.69416V2.84708H0V0Z" fill="#2BCCE0"/>
                         <path d="M317 0H162L167.5 5.69416V2.84708H317V0Z" fill="url(#paint0_linear_335_1441)"/>
@@ -533,7 +468,7 @@
                         </linearGradient>
                         </defs>
                     </svg>
-                <div class="team-content d-flex justify-content-between">
+                <div class="team-content d-flex justify-content-md-between justify-content-center" data-aos="fade-up" data-aos-duration="1000">
                     <div class="team-item bg-black d-flex flex-column position-relative">
                         <div class="team-image position-relative">
                             <img src="asset/team-1.png" class="team-1">
@@ -709,8 +644,8 @@
     <section id="footer" class="bg-black">
         <div class="footer">
             <div class="container d-flex flex-column justify-content-around align-items-center">
-                <img src="asset/logo-small.png" class="footer-logo">
-                <div class="footer-sosmed d-flex justify-content-between">
+                <img src="asset/logo-small.png" class="footer-logo" data-aos="fade-up" data-aos-duration="1000">
+                <div class="footer-sosmed d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                     <a href="#" class="fb-svg">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.5 6.05732H13.5C12.9477 6.05732 12.5 6.50484 12.5 7.05689V10.0556H16.5C16.6137 10.0531 16.7216 10.106 16.7892 10.1974C16.8568 10.2889 16.8758 10.4075 16.84 10.5154L16.1 12.7145C16.0318 12.9163 15.8431 13.0528 15.63 13.0543H12.5V20.5512C12.5 20.8272 12.2761 21.0509 12 21.0509H9.5C9.22386 21.0509 9 20.8272 9 20.5512V13.0543H7.5C7.22386 13.0543 7 12.8306 7 12.5546V10.5554C7 10.2794 7.22386 10.0556 7.5 10.0556H9V7.05689C9 4.84869 10.7909 3.05859 13 3.05859H16.5C16.7761 3.05859 17 3.28236 17 3.55838V5.55753C17 5.83356 16.7761 6.05732 16.5 6.05732Z" fill="white"/>
@@ -730,16 +665,16 @@
                         <img src="asset/dc-icon.png" alt="">
                     </a>
                 </div>
-                <p class="footer-subtitle">
+                <p class="footer-subtitle" data-aos="fade-up" data-aos-duration="1000">
                     BEO has traditional elements of roleplay and exploration the MMO’s we love have, combined with the play to earn mechanics of blockchain technology making it the first of its kind.
                 </p>
                 <hr style="height: 2px; background-color: white; width: 100%;">
-                <div class="footer-copyright d-flex justify-content-between">
-                    <div class="copyright-item d-flex justify-content-between">
+                <div class="footer-copyright d-flex flex-column flex-md-row justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="copyright-item d-flex justify-content-md-between justify-content-center">
                         <p><a href="#">2021 BeyondEarth</a></p>
                         <p><a href="#">All Rights Reserved</a></p>
                     </div>
-                    <div class="copyright-item d-flex justify-content-between">
+                    <div class="copyright-item d-flex justify-content-md-between justify-content-center">
                         <p><a href="#">Privacy Notice</a></p>
                         <p><a href="#">Cookie Notice</a></p>
                     </div>
@@ -752,22 +687,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {once: true}
+        );
+    </script>
     <script src="owl.carousel.min.js"></script>
     <script>
         $(document).ready(function(){
             $(".owl-carousel").owlCarousel(
                 {loop: true,
-                margin:10,
+                margin:0,
                 nav:true,
+                center: true,
                 responsive:{
                     0:{
                         items:1
                     },
                     600:{
-                        items:3
+                        items:2
                     },
                     1000:{
-                        items:5
+                        items:3
                     }
                 }}
             );

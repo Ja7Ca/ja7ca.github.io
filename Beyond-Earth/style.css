@@ -16,7 +16,40 @@ section{
     z-index: 0;
 }
 
+/* .owl-carousel{
+    width: 100%;
+    overflow-y: auto;
+    height: 800px;
+} */
+
+.owl-stage{
+    display: flex;
+    align-items: center;
+    width: auto !important;
+}
+
+.owl-item{
+    /* width: auto !important; */
+}
+
+.owl-stage-outer{
+    overflow: visible !important;
+}
+
 /* Animasi */
+@keyframes moveVertical{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 5px
+    }
+    100%{
+        top: 0px;
+    }
+
+}
+
 @keyframes scale{
     0%{
         transform: scale(1);
@@ -35,6 +68,41 @@ section{
 }
 /* End Animasi */
 
+.hamburger{
+    width: fit-content;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}  
+
+.hamburger .line{
+    width: 25px;
+    height: 3px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+#toogle-button.is-active .line:nth-child(2){
+    opacity: 0;
+}
+  
+#toogle-button.is-active .line:nth-child(1){
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
+}
+  
+#toogle-button.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-3px) rotate(-45deg);
+}
+
 /* Header */
 
 .navbar{
@@ -50,19 +118,29 @@ section{
 .page-link{
     font-weight: 700;
     color: #808080;
-    background-color: transparent;
-    border: 0;
+    background-color: transparent !important;
+    border: 0 !important;
 }
 
 .page-link:hover{
     background-color: transparent !important;
-    color: white;
+    color: white !important;
 }
 
 .toogle-dropdown:hover{
     color: white !important;
     transition-duration: 0.15s;
     cursor: pointer;
+}
+
+.page-link:visited{
+    color: #808080;
+    border: 0px solid transparent;
+}
+
+.page-link:active{
+    color: white;
+    border: 0;
 }
 
 .nav-button a{
@@ -80,10 +158,12 @@ section{
     /* width: 0; */
     display: none;
     transition-duration: 1s;
+    background-color: #00000049;
+    border-radius: 10px;
 }
 
 .menu-dropdown a{
-    width: 200px;
+    width: 110%;
     font-weight: 600;
 }
 
@@ -138,6 +218,13 @@ section{
 .banner-button{
     margin-bottom: 20px;
     transition: 0.5s;
+}
+
+.header-svg{
+    /* animation-name: moveVertical;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite; */
+    animation: moveVertical .75s infinite ease-in-out;
 }
 
 .banner-button:active, .galactic-button:active{
@@ -313,7 +400,6 @@ section{
     height: auto;
     transform: rotate(-90deg);
     color: white;
-    transition-duration: 1s;
 }
 
 .hide-short, .subtitle-short{
@@ -337,7 +423,6 @@ section{
     font-size: 24px;
     font-weight: 700;
     color: white;
-    transition-duration: 1s;
 }
 
 .subtitle-long{
@@ -364,7 +449,7 @@ section{
 }
 
 .wrap-galactic{
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 }
 
 .wrap-galactic::-webkit-scrollbar{
@@ -379,7 +464,7 @@ section{
 }
 
 .galactic-item{
-    min-width: 378px;
+    width: 378px;
     margin: 0 20px;
     /* overflow-y: hidden; */
     /* overflow: scroll; */
@@ -387,6 +472,7 @@ section{
 
 .galactic-item .bg-black{
     transition-duration: 0.5s;
+    width: 100% !important;
 }
 
 .galactic-item:hover .bg-black{
@@ -398,7 +484,7 @@ section{
 }
 
 .galactic-item:hover .galactic-border{
-    width: 388px;
+    width: 378px;
     height: 628px;
     overflow: hidden;
 }
@@ -454,7 +540,7 @@ section{
 .galactic-image{
     top: 10%;
     left: -25%;
-    width: 150%;
+    width: 150% !important;
     opacity: 50%;
     transition-duration: 0.5s;
 }
@@ -532,8 +618,19 @@ section{
 }
 
 .calculated-item:nth-child(2){
-    background-image: url("asset/etherium-grey.png");
+    background-color: #222222;
     background-size: cover;
+    transition-duration: 1s;
+}
+
+.calculated-item:nth-child(2) img{
+    opacity: 0.2;
+    transition-duration: 1s;
+}
+
+.calculated-item:nth-child(2):hover img{
+    opacity: 0.5 !important;
+    position: absolute !important;
 }
 
 .calculated-title{
@@ -687,6 +784,11 @@ section{
 .copyright-item{
     padding: 0;
     margin: 0;
+}
+
+.copyright-item p a{
+    text-decoration: none;
+    color: #808080;
 }
 
 .copyright-item:nth-child(2) p:nth-child(1){
