@@ -1,0 +1,155 @@
+*{
+    font-family: 'Ovo', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3FBFD;
+}
+
+.owl-nav{
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-carousel{
+    height: 430px;
+}
+
+/* Navbar */
+#navbar{
+    padding: 10px 0;
+}
+
+.nav-logo{
+    font-family: 'Jimmy script';
+    font-size: 40px;
+    color: #5C9EAD;
+}
+
+.nav-link{
+    width: 30%;
+}
+
+.link-page{
+    font-size: 16px;
+    color: #939393;
+    font-weight: 600;
+}
+
+.link-page:hover{
+    color: #F19049;
+    text-decoration: none;
+}
+
+.link-page.active{
+    color: #F19049;
+}
+
+.nav-button a{
+    background-color: #F19049;
+    color: white;
+}
+
+.nav-button a:hover{
+    transform: scale(1.02);
+    color: white;
+}
+
+.nav-button a:active{
+    transform: scale(0.95);
+    color: white;
+}
+
+.nav-button a:focus{
+    border: 0;
+    color: white;
+}
+
+.main-title{
+    color: #326273;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+/* End Nav */
+/* Main */
+
+.main-frontend{
+    padding: 30px 0;
+    height: 430px !important;
+}
+
+.container-fluid{
+    overflow: hidden;
+}
+
+.frontend-content{
+    margin-top: 50px;
+    left: -26%;
+    width: 130% !important;
+}
+
+.frontend-item{
+    margin: 0 20px;
+}
+
+.center .frontend-image{
+    width: 621px;
+    transition-duration: 1s;
+}
+
+.frontend-image{
+    width: 320px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px -2px;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.owl-item img{
+    width: auto !important;
+}
+
+/* .frontend-image:hover{
+    width: 621px;
+    transition-duration: 1s;
+    left: -5%;
+}
+
+.frontend-image:hover img{
+    transition-duration: 1s;
+} */
+
+.frontend-image img{
+    /* width: auto; */
+    height: 100%;
+    transition-duration: 1s;
+}
+
+.frontend-title{
+    color: #326273;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.frontend-button{
+    color: white;
+    background-color: #5C9EAD;
+    font-size: 16px;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.frontend-button:hover{
+    transform: scale(1.02);
+    color: white !important;
+}
+
+.frontend-button:active{
+    transform: scale(0.95);
+    color: white;
+}
