@@ -45,6 +45,20 @@ section{
     overflow: visible !important;
 }
 
+.owl-nav{
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+button svg{
+    width: 30px;
+    height: 30px;
+}
+
 .wrap-galactic .owl-stage{
     display: flex;
     align-items: center;
@@ -148,6 +162,10 @@ section{
 .page-link:hover{
     background-color: transparent !important;
     color: white !important;
+}
+
+.toogle-dropdown{
+    z-index: 10;
 }
 
 .toogle-dropdown:hover{

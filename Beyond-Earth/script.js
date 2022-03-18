@@ -2,20 +2,9 @@ $(document).ready(function(){
     let nav = document.getElementById("page");
 
     setInterval(function(){
-        $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature").attr("id", "")
-        $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature").removeClass("animationScale")
-        // $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature").addClass("feature-item-short")
-        // $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature").removeClass("feature-item-long")
-        // $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature .title-long").addClass("title-short").removeClass("title-long")
-        // $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature svg").addClass("hide-short").removeClass("subtitle-short")
-        // $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature .subtitle-long").addClass("subtitle-short").removeClass("subtitle-long")
         $(".feature-text .owl-stage .owl-item").not(".center").find(".toogle-feature img").attr("src", "./asset/border-feature-long-svg.png")
 
-        $(".feature-text .owl-stage .center").find(".toogle-feature").css("transitonDuration","1s")
-        $(".feature-text .owl-stage .center").find(".toogle-feature").attr("id", "toogle-long");
         $(".feature-text .owl-stage .center").find(".toogle-feature").removeClass("feature-item-short").addClass("feature-item-long")
-        $(".feature-text .owl-stage .center").find(".toogle-feature").removeClass("animationScale")
-        $(".feature-text .owl-stage .center").find(".toogle-feature").addClass("animationScale");
         $(".feature-text .owl-stage .center").find(".toogle-feature .title-short").addClass("title-long").removeClass("title-short")
         $(".feature-text .owl-stage .center").find(".toogle-feature svg").removeClass("hide-short")
         $(".feature-text .owl-stage .center").find(".toogle-feature .subtitle-short").addClass("subtitle-long").removeClass("subtitle-short")
@@ -33,11 +22,13 @@ $(document).ready(function(){
         $("#feature-text-carousel").addClass("show")
     }
 
-    $(".toogle-dropdown").mouseenter(function(){
-        $(this).find(".menu-dropdown").css(
-            {"display": "block"},
-            {"transition-duration": "1s"}
-        )   
+    $(".toogle-dropdown").on('click', function(){
+        if(!$(this).find("div").hasClass("hide") && !$(this).find("div").hasClass("show")){
+            $(this).find("div").toggleClass("show flex-column")    
+        } else {
+            $(this).find("div").toggleClass("hide")
+            $(this).find("div").toggleClass("show flex-column")
+        }
     })
 
     $(".hamburger").click(function(){
@@ -81,13 +72,6 @@ $(document).ready(function(){
             )
          }
         $(".navbar").css("backgroundColor", "transparent")
-        $(".menu-dropdown").css(
-            {"display": "none"},
-            {"transition-duration": "1s"}
-        )
-    })
-
-    $(document).on("click", function(){
         $(".menu-dropdown").css(
             {"display": "none"},
             {"transition-duration": "1s"}
@@ -174,6 +158,8 @@ $(window).on('scroll', function(){
     if(offset > navTop){
         $("#page").css("opacity", "0");
         $(".navbar").css("backgroundColor", "black")
+        $(".menu-dropdown").addClass("hide")
+        $(".menu-dropdown").removeClass("show flex-column")
         if($(".hamburger").hasClass("is-active")){
            $(".hamburger").toggleClass("is-active");
         }    
