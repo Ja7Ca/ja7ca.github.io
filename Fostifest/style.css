@@ -403,6 +403,7 @@ input::-webkit-inner-spin-button {
 }
 
 select {
+    background-color: white;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
@@ -604,6 +605,10 @@ input[type=submit] {
         margin-bottom: 20px;
     }
 
+    .lomba-image-1{
+        left: 0;
+    }
+
     .text-lomba{
         width: 100%;
     }
@@ -624,7 +629,7 @@ input[type=submit] {
 @media (min-width: 0px) and (max-width: 400px){
     .banner-1{
         top: 80px !important;
-        left: 0px !important;
+        left: 50px !important;
         width: 100% !important;
     }
 
@@ -681,7 +686,7 @@ input[type=submit] {
     }
 
     .wrap-tag{
-        left: 0;
+        left: -20px;
         bottom: 0;
     }
 
