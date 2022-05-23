@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Lomba</title>
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Icon Title -->
+    <link rel = "icon" href ="asset/logo.png" type = "image/x-icon">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex position-relative">
+    <section id="navbar" class="position-absolute active">
+        <div class="container">
+            <div class="nav-menu d-flex align-items-center justify-content-center">
+                <img src="asset/logo.png" width="40" class="logo-nav">
+                <h1 class="tag-logo">FOSTIFEST<br><span>Dashboard</span></h1>
+            </div>
+            <div class="nav-menu d-flex flex-column align-items-center justify-content-center">
+                <a href="dashboard-tim.html" class="text-decoration-none w-100 my-1">
+                    <div class="nav-item text-white text-start">
+                        <p>Tim Bubaddibako</p>
+                    </div>
+                </a>
+                <a href="dashboard-ketua.html" class="text-decoration-none w-100 my-1">
+                    <div class="nav-item text-white text-start">
+                        <p>Ketua Tim</p>
+                    </div>
+                </a>
+                <a href="dashboard-anggota.html" class="text-decoration-none w-100 my-1">
+                    <div class="nav-item text-white text-start">
+                        <p>Anggota</p>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-menu d-flex flex-column align-items-center justify-content-center">
+                <a href="#" class="text-decoration-none w-100 my-1">
+                    <div class="nav-item text-white text-start">
+                        <p>Guideline book</p>
+                    </div>
+                </a>
+            </div>
+            <a href="#" class="text-decoration-none w-100 my-1 position-absolute button-logout ms-2">
+                <div class="nav-item text-white text-start fw-bold">                        
+                    <p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.8999 7.55999C9.2099 3.95999 11.0599 2.48999 15.1099 2.48999H15.2399C19.7099 2.48999 21.4999 4.27999 21.4999 8.74999V15.27C21.4999 19.74 19.7099 21.53 15.2399 21.53H15.1099C11.0899 21.53 9.2399 20.08 8.9099 16.54" stroke="url(#paint0_linear_198_20683)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12H14.88" stroke="url(#paint1_linear_198_20683)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6499 8.6499L15.9999 11.9999L12.6499 15.3499" stroke="url(#paint2_linear_198_20683)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_198_20683" x1="6.8209" y1="-14.9634" x2="24.4233" y2="-13.5193" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#369A90"/>
+                        <stop offset="0.0001" stop-color="#369A90"/>
+                        <stop offset="1" stop-color="#005571"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_198_20683" x1="-0.125199" y1="11.0833" x2="4.97854" y2="19.2322" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#369A90"/>
+                        <stop offset="0.0001" stop-color="#369A90"/>
+                        <stop offset="1" stop-color="#005571"/>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_198_20683" x1="12.0972" y1="2.50823" x2="16.7906" y2="2.79914" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#369A90"/>
+                        <stop offset="0.0001" stop-color="#369A90"/>
+                        <stop offset="1" stop-color="#005571"/>
+                        </linearGradient>
+                        </defs>
+                        </svg> Logout</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="content">
+        <div class="nav-top d-flex align-items-center sticky-top">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <p class="nav-title m-0 p-2">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.92327 11.7759C9.81494 11.7651 9.68494 11.7651 9.56577 11.7759C6.98744 11.6892 4.93994 9.57675 4.93994 6.97675C4.93994 4.32258 7.08494 2.16675 9.74994 2.16675C12.4041 2.16675 14.5599 4.32258 14.5599 6.97675C14.5491 9.57675 12.5016 11.6892 9.92327 11.7759Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.7776 4.33325C19.8792 4.33325 21.5692 6.03409 21.5692 8.12492C21.5692 10.1724 19.9442 11.8408 17.9184 11.9166C17.8317 11.9058 17.7342 11.9058 17.6367 11.9166" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.50678 15.7733C1.88511 17.5283 1.88511 20.3883 4.50678 22.1324C7.48594 24.1258 12.3718 24.1258 15.3509 22.1324C17.9726 20.3774 17.9726 17.5174 15.3509 15.7733C12.3826 13.7908 7.49678 13.7908 4.50678 15.7733Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.8684 21.6667C20.6484 21.5042 21.3851 21.1901 21.9917 20.7242C23.6817 19.4567 23.6817 17.3659 21.9917 16.0984C21.3959 15.6434 20.6701 15.3401 19.9009 15.1667" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Tim Bubadibako</p>
+            </div>
+        </div>
+        <div class="main-content d-flex justify-content-center align-items-center">
+            <div class="container d-flex align-items-center position-relative">
+                <h1 class="text-center">Sebelum mengikuti lomba, Identitas Tim Bubadibako harap diisi dulu dek</h1>
+            </div>
+        </div>
+        <div class="nav-bot p-2 d-flex justify-content-center align-items-center">
+            <div class="container text-center">
+                <p class="nav-title m-0 p-2">Copyright &copy; FOSTIFEST 2.0</p>
+            </div>
+        </div>
+    </section>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".hamburger").click(function(){
+            $("#navbar").addClass("active");
+        })
+        $(".main-content, .nav-bot").click(function(){
+            $("#navbar").removeClass("active");
+        })
+    </script>
+</body>
+</html>

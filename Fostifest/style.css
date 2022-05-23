@@ -421,6 +421,25 @@ input[type=submit] {
     padding: 10px;
     width: 180px
   }
+#after-form, #before-form{
+    position: absolute;
+    /* top: 0; */
+    /* z-index: 999; */
+}
+
+#before-form{
+    top: 0;
+}
+
+.bg-after-form{
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-text{
+    min-width: 50%;
+    max-width: 90%;
+}
 
 /* min-width 1200px */
 @media (min-width: 1200px) {

@@ -16,8 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <section id="form-webinar" class="d-flex">
+<body id="form-webinar" class="position-relative">
+    <section class="d-flex">
         <div class="form-webinar-image d-none d-lg-flex justify-content-center align-items-center position-relative border border-1">
             <img src="asset/bg-shadow-form.png" alt="">
             <img src="asset/image-lock.png" class="position-absolute">
@@ -39,7 +39,7 @@
         <div class="form-webinar-form d-flex flex-column align-items-center">
             <h1 class="form-title">Form Pendaftaran Webinar</h1>
             <p class="form-subtitle text-center">Seluruh informasi yang ada di dalam form bersifat rahasia dan tanda <span>*</span> wajib untuk diisi.</p>
-            <form action="" method="POST" class="text-center">
+            <form action="" method="POST" class="text-center" id="wrap-from">
                 <p class="form-limit text-start ms-4 fw-bold">IDENTITAS</p>
                 <div class="input-form position-relative">
                     <p class="label position-absolute">Nama Lengkap</p>
@@ -86,8 +86,28 @@
                         <span class="req position-absolute">*</span>
                     </div>
                 </div>
-                <input type="submit" value="Kirim" name="submit">
+                <input type="submit" value="Kirim" name="submit" class="button-submit">
             </form>
+        </div>
+    </section>
+    <section id="before-form" class="d-flex align-items-center justify-content">
+        <div class="bg-after-form bg-black bg-opacity-75 d-flex align-items-center justify-content-center">
+            <div class="modal-text px-3 py-5 d-flex flex-column align-items-center justify-content-center bg-white rounded">
+                <h3 class="text-center">JIKA ADA PERTANYAAN HUBUNGI</h3>
+                <div class="form-sosmed d-flex flex-column align-items-center mt-3">
+                    <div class="form-sosmed-image">
+                        <a href="#" class="text-decoration-none" target="_blank">
+                            <img src="asset/instagram.png" alt="">
+                        </a>
+                        <a href="#" class="text-decoration-none" target="_blank">
+                            <img src="asset/twitter.png" alt="">
+                        </a>
+                        <a href="#" class="text-decoration-none" target="_blank">
+                            <img src="asset/whatsapp.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Font Awesome -->
@@ -125,6 +145,10 @@
             }
             $("#change-bukti").text(instansi);
         }
+
+        $("#before-form").click(function(){
+            $(this).css({"top":"700vw"})      
+        })
     </script>
 </body>
 </html>
