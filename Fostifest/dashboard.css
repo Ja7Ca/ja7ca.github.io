@@ -60,6 +60,12 @@ body{
     padding: 0px;
 }
 
+.nav-active{
+    font-weight: bold;
+    border-left: 4px solid black;
+    padding-left: 5px
+}
+
 .button-logout{
     bottom: 30px;
 }
@@ -94,7 +100,7 @@ body{
 .hamburger{
     width: fit-content;
     height: fit-content;
-    width: 36px;
+    width: 30px;
     cursor: pointer;
 }
 
@@ -105,7 +111,7 @@ body{
 }
 
 .hamburger .line:nth-child(2){
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .nav-title{
