@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -100,7 +101,7 @@ body{
 }
 
 .banner-title, .banner-subtitle{
-    font-family: 'Play', sans-serif;
+    /* font-family: 'Play', sans-serif; */
 }
 
 .banner-title{
@@ -118,7 +119,7 @@ body{
 }
 
 #main{
-    background-color: #F5F9FC;
+    /* background-color: #F5F9FC; */
     padding-bottom: 54px;
 }
 
@@ -129,26 +130,26 @@ body{
 
 .non-button{
     border-radius: 5px;
-    background-color: #02BA69;
+    background-color: #DA6098;
     color: #fff;
     display: inline-block;
 }
 
 .main-title{
-    font-family: 'Play', sans-serif;
+    /* font-family: 'Play', sans-serif; */
     font-weight: bold;
     font-size: 32px;
 }
 
 .main-subtitle{
-    font-family: 'Play', sans-serif;
+    /* font-family: 'Play', sans-serif; */
     font-size: 18px;
     font-weight: 300;
     line-height: 150%;
 }
 
 .main-button{
-    background-image: linear-gradient(to right, #369A90, #005571) !important;
+    background-color: #325288;
     color: white !important;
     font-weight: 400;
 }
@@ -177,7 +178,7 @@ a.btn {
 
 .webinar-image-1{
     height: 350px;
-    width: 250px;
+    /* width: 250px; */
     border-radius: 10px;
     right: 0;
     top: -25%;
@@ -189,7 +190,7 @@ a.btn {
 }
 
 .name-tag{
-    background-color: #02BA69;
+    background-color: #24a19c;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -203,10 +204,10 @@ a.btn {
     position: absolute;
     right: -26px;
     top: 0;
-    border-bottom: 32px solid #02BA69;
+    border-bottom: 32px solid #24a19c;
     border-left: 0px solid transparent;
     border-right: 27px solid transparent;
-    border-top: 0px solid #02BA69;
+    border-top: 0px solid #24a19c;
     border-radius: 0px;
   }
 
@@ -226,6 +227,11 @@ a.btn {
 
 .image-lomba{
     width: 30%;
+}
+
+.lomba-image{
+    width: 100%;
+    /* height: 100%; */
 }
 
 .wrap-sponsor{
@@ -257,14 +263,14 @@ a.btn {
 }
 
 .sosmed-title{
-    font-family: 'Play', sans-serif;
+    /* font-family: 'Play', sans-serif; */
     font-weight: bold;
     font-size: 32px;
     line-height: 140%;
 }
 
 .sosmed-subtitle{
-    font-family: 'Play', sans-serif;
+    /* font-family: 'Play', sans-serif; */
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
@@ -273,6 +279,10 @@ a.btn {
 .sosmed-image{
     margin-top: 23px;
     margin-bottom: 127px
+}
+
+.sosmed-image img{
+    width: 78px;
 }
 
 .sosmed-footer{
@@ -288,7 +298,9 @@ a.btn {
 }
 
 .form-webinar-image{
-    background-color: #005571;
+    /* background-color: #005571; */
+    background-image: url(./asset/bg-form.png);
+    object-fit: cover;
     width: 33%;
     height: 100vh;
     overflow: hidden;
@@ -301,11 +313,22 @@ a.btn {
 .form-sosmed p{
     font-size: 18px;
     font-weight: 600;
-    color: white;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.form-sosmed-image{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .form-sosmed img{
-    width: 64px;
+    width: 40px;
+    margin: 0 8px;
 }
 
 .form-webinar-form{
@@ -538,6 +561,7 @@ input[type=submit] {
     }
 
     .image-webinar{
+        width: 50%;
         height: 350px;
         margin-bottom: 20px;
     }
@@ -552,8 +576,13 @@ input[type=submit] {
 
     .image-lomba{
         width: 350px;
-        height: 250px;
+        height: 350px;
         margin-bottom: 20px;
+    }
+
+    .lomba-image{
+        /* height: 450px */
+        /* margin-bottom: 200px; */
     }
 
     .text-lomba{
@@ -607,6 +636,7 @@ input[type=submit] {
 
     .image-webinar{
         height: 350px;
+        width: 60%;
         margin-bottom: 20px;
     }
 
@@ -620,12 +650,17 @@ input[type=submit] {
 
     .image-lomba{
         width: 350px;
-        height: 250px;
+        height: 350px;
         margin-bottom: 20px;
     }
 
-    .lomba-image-1{
+    .image-lomba img{
+        /* width: 100px !important; */
+    }
+
+    .lomba-image{
         left: 0;
+        /* height: 450px */
     }
 
     .text-lomba{
@@ -695,27 +730,28 @@ input[type=submit] {
     }
 
     .image-webinar{
-        width: 250px;
+        width: 95%;
         height: 350px;
         margin-bottom: 20px;
     }
 
     .webinar-image-1{
         top: 0;
+        width: 100%;
     }
 
     .wrap-tag{
-        left: -20px;
+        left: 40px;
         bottom: 0;
     }
 
     .image-lomba{
         width: 100%;
-        height: 250px;
+        height: 300px;
         margin-bottom: 20px;
     }
 
-    .lomba-image-1{
+    .lomba-image{
         position: relative !important;
         width: 290px;
     }
